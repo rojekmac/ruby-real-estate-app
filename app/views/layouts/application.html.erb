@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>My First App</title>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <%= csrf_meta_tags %>
+ <%= csp_meta_tag %>
+ <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+ <%= javascript_importmap_tags %>
+ </head>
+<body>
+ <header>
+  <h1>My Real Estate</h1>
+ </header>
+ <nav>
+  <%= link_to "HOME", root_path %>
+  <%= link_to "LISTINGS", pages_listings_path %>
+  <%= link_to "CONTACT", pages_contact_path %>
+  <%= link_to "ABOUT", pages_about_path %>
+  <%= link_to "PROPERTY SEARCH", properties_search_path %>
+  <%= link_to "NEWEST DEVELOPMENTS", properties_developments_path %>
+  <%= link_to "PROFILE", users_profile_path %>
+  <%= link_to "LOGIN", users_login_path %>
+ </nav>
+ <%= yield %>
+</body>
+</html>
