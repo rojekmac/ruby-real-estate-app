@@ -60,7 +60,39 @@ document.addEventListener("turbo:load", function () {
       // After filtering, reset pagination to first page
       setupPagination();
       showPage(1);
+      updateNoResultsMessage();
     });
+  }
+
+  // Reset Filters logic
+  const resetBtn = document.querySelector(".reset-filters-btn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", function () {
+      document.getElementById("property-type").value = "";
+      document.getElementById("price-range").value = "";
+      document.getElementById("bedrooms").value = "";
+      document.getElementById("bathrooms").value = "";
+      document
+        .querySelectorAll(".property-card")
+        .forEach((card) => card.classList.add("filtered-in"));
+      setupPagination();
+      showPage(1);
+      updateNoResultsMessage();
+    });
+  }
+
+  function updateNoResultsMessage() {
+    const visibleCards = Array.from(
+      document.querySelectorAll(".property-card.filtered-in")
+    );
+    const noResultsMsg = document.getElementById("no-results-message");
+    if (noResultsMsg) {
+      if (visibleCards.length === 0) {
+        noResultsMsg.style.display = "";
+      } else {
+        noResultsMsg.style.display = "none";
+      }
+    }
   }
 
   // PAGINATION
@@ -140,6 +172,7 @@ document.addEventListener("turbo:load", function () {
     // Update next/prev button visibility
     const totalPages = Math.ceil(cards.length / perPage);
     updatePaginationButtonVisibility(totalPages);
+    updateNoResultsMessage();
   }
 
   function updateActivePageBtn(page) {

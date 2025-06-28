@@ -578,7 +578,7 @@ nav a:focus::after {
 .property-price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--primary-red);
+  color: var(--primary-burgundy);
   margin-bottom: 0;
   margin-top: 0;
 }
