@@ -1,15 +1,17 @@
 <!-- Hero Section -->
 <div class="hero-section">
-  <div class="hero-content">
-    <h1 class="hero-title">Find Your Dream Home</h1>
-    <p class="hero-subtitle">Discover exceptional properties in the most desirable locations</p>
-    <div class="hero-buttons">
-      <%= link_to "Explore What's for Sale", pages_listings_path, class: "btn btn-primary" %>
-      <a class="btn btn-secondary" href="<%= pages_listings_path %>">Property Search</a>
+  <div class="container hero-container" style="display: flex; align-items: center; justify-content: center; gap: 4rem;">
+    <div class="hero-content">
+      <h1 class="hero-title">Find Your Dream Home</h1>
+      <p class="hero-subtitle">Discover exceptional properties in the most desirable locations</p>
+      <div class="hero-buttons">
+        <%= link_to "Explore What's for Sale", pages_listings_path, class: "btn btn-primary" %>
+        <a class="btn btn-secondary" href="<%= pages_listings_path %>">Property Search</a>
+      </div>
     </div>
-  </div>
-  <div class="hero-image">
-    <%= image_tag 'thai_logo.jpeg', alt: 'Dream Home', class: 'hero-img' %>
+    <div class="hero-image">
+      <%= image_tag 'thai_logo.jpeg', alt: 'Dream Home', class: 'hero-img' %>
+    </div>
   </div>
 </div>
 
