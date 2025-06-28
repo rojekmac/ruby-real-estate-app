@@ -74,16 +74,30 @@ document.addEventListener("turbo:load", function () {
     const pagination = document.querySelector(".pagination");
     if (!pagination) return;
     pagination.innerHTML = "";
+
+    // Previous button
+    if (totalPages > 1) {
+      const prevBtn = document.createElement("button");
+      prevBtn.className = "pagination-btn";
+      prevBtn.textContent = "Previous";
+      prevBtn.id = "pagination-prev-btn";
+      prevBtn.addEventListener("click", function () {
+        if (currentPage > 1) {
+          showPage(currentPage - 1);
+          updateActivePageBtn(currentPage);
+        }
+      });
+      pagination.appendChild(prevBtn);
+    }
+
     for (let i = 1; i <= totalPages; i++) {
       const btn = document.createElement("button");
       btn.className = "pagination-btn" + (i === 1 ? " active" : "");
       btn.textContent = i;
+      btn.dataset.page = i;
       btn.addEventListener("click", function () {
         showPage(i);
-        document
-          .querySelectorAll(".pagination-btn")
-          .forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
+        updateActivePageBtn(i);
       });
       pagination.appendChild(btn);
     }
@@ -92,19 +106,17 @@ document.addEventListener("turbo:load", function () {
       nextBtn.className = "pagination-btn";
       nextBtn.textContent = "Next";
       nextBtn.addEventListener("click", function () {
-        const current =
-          Array.from(pagination.children).findIndex((b) =>
-            b.classList.contains("active")
-          ) + 1;
+        const current = currentPage;
         if (current < totalPages) {
-          pagination.children[current].click();
+          showPage(current + 1);
+          updateActivePageBtn(current + 1);
         }
       });
       nextBtn.id = "pagination-next-btn";
       pagination.appendChild(nextBtn);
     }
     console.log("Pagination buttons generated:", totalPages);
-    updateNextButtonVisibility(totalPages);
+    updatePaginationButtonVisibility(totalPages);
   }
 
   function showPage(page) {
@@ -125,18 +137,36 @@ document.addEventListener("turbo:load", function () {
     // Update count
     const countEl = document.getElementById("property-count");
     if (countEl) countEl.textContent = cards.slice(start, end).length;
-    // Update next button visibility
+    // Update next/prev button visibility
     const totalPages = Math.ceil(cards.length / perPage);
-    updateNextButtonVisibility(totalPages);
+    updatePaginationButtonVisibility(totalPages);
   }
 
-  function updateNextButtonVisibility(totalPages) {
+  function updateActivePageBtn(page) {
+    document
+      .querySelectorAll(".pagination-btn")
+      .forEach((b) => b.classList.remove("active"));
+    const btn = document.querySelector(
+      ".pagination-btn[data-page='" + page + "']"
+    );
+    if (btn) btn.classList.add("active");
+  }
+
+  function updatePaginationButtonVisibility(totalPages) {
     const nextBtn = document.getElementById("pagination-next-btn");
     if (nextBtn) {
       if (currentPage >= totalPages) {
         nextBtn.style.display = "none";
       } else {
         nextBtn.style.display = "";
+      }
+    }
+    const prevBtn = document.getElementById("pagination-prev-btn");
+    if (prevBtn) {
+      if (currentPage <= 1) {
+        prevBtn.style.display = "none";
+      } else {
+        prevBtn.style.display = "";
       }
     }
   }
