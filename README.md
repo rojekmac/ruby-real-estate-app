@@ -1,24 +1,56 @@
-# README
+# Thailand Eigentum Real Estate App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A modern, mobile-friendly web application for showcasing real estate listings in Thailand. Built with Ruby on Rails, this app features a beautiful homepage, property listings, and easy navigation. Designed for agencies, agents, and property seekers.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Modern, responsive homepage with hero, About, and Contact sections
+- Property listings page with filters and property cards
+- Smooth scrolling navigation (About/Contact)
+- Floating "Back to Top" button
+- Stylish gold/black/white color scheme matching the brand
+- Easy to customize and extend
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Prerequisites
 
-* Database creation
+- Ruby 3.2+
+- Rails 8+
+- Node.js & Yarn (if using JS features)
+- SQLite (default, for development)
 
-* Database initialization
+### Setup & Local Deployment
 
-* How to run the test suite
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rojekmac/ruby-real-estate-app.git
+   cd ruby-real-estate-app
+   ```
+2. **Install dependencies:**
+   ```bash
+   bundle install
+   # If using JS: yarn install --check-files
+   ```
+3. **Setup the database:**
+   ```bash
+   bin/rails db:setup
+   ```
+4. **Start the server:**
+   ```bash
+   bin/dev
+   # or
+   bin/rails server
+   ```
+5. **Visit:** [http://localhost:3000](http://localhost:3000)
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contact
 
-* Deployment instructions
+**Name:** Tobias Schwitall  
+**Email:** tobias.schwitall@example.com  
+**Phone:** +66 81 234 5678  
+**Location:** Bangkok, Thailand
 
-* ...
+---
+
+_This project is a work in progress. Contributions and feedback are welcome!_
