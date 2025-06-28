@@ -1,2 +1,202 @@
-<h1>Pages#listings</h1>
-<p>Find me in app/views/pages/listings.html.erb</p>
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title">Property Listings</h1>
+    <p class="page-subtitle">Discover exceptional properties available for sale</p>
+  </div>
+</div>
+
+<!-- Filters Section -->
+<div class="filters-section">
+  <div class="container">
+    <div class="filters-form">
+      <div class="filter-group">
+        <label for="property-type">Property Type</label>
+        <select id="property-type" class="filter-select">
+          <option value="">All Types</option>
+          <option value="house">House</option>
+          <option value="apartment">Apartment</option>
+          <option value="condo">Condo</option>
+          <option value="townhouse">Townhouse</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="price-range">Price Range</label>
+        <select id="price-range" class="filter-select">
+          <option value="">Any Price</option>
+          <option value="0-200000">Under $200,000</option>
+          <option value="200000-400000">$200,000 - $400,000</option>
+          <option value="400000-600000">$400,000 - $600,000</option>
+          <option value="600000+">$600,000+</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="bedrooms">Bedrooms</label>
+        <select id="bedrooms" class="filter-select">
+          <option value="">Any</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="bathrooms">Bathrooms</label>
+        <select id="bathrooms" class="filter-select">
+          <option value="">Any</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+        </select>
+      </div>
+      
+      <button class="btn btn-primary filter-btn">Apply Filters</button>
+    </div>
+  </div>
+</div>
+
+<!-- Listings Grid -->
+<div class="listings-section">
+  <div class="container">
+    <div class="listings-header">
+      <h2>Available Properties</h2>
+      <div class="listings-count">Showing <span id="property-count">12</span> properties</div>
+    </div>
+    
+    <div class="listings-grid" id="listings-grid">
+      <!-- Property Card 1 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-placeholder">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="property-badge">New</div>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Modern Family Home</h3>
+          <p class="property-address">123 Oak Street, Downtown</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 3 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,100 sq ft</span>
+          </div>
+          <div class="property-price">$450,000</div>
+          <button class="btn btn-outline">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Property Card 2 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-placeholder">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="property-badge">Featured</div>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Luxury Apartment</h3>
+          <p class="property-address">456 Park Avenue, Midtown</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,200 sq ft</span>
+          </div>
+          <div class="property-price">$380,000</div>
+          <button class="btn btn-outline">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Property Card 3 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-placeholder">
+            <i class="fas fa-home"></i>
+          </div>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Cozy Townhouse</h3>
+          <p class="property-address">789 Elm Court, Suburbs</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 4 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 3 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,800 sq ft</span>
+          </div>
+          <div class="property-price">$520,000</div>
+          <button class="btn btn-outline">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Property Card 4 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-placeholder">
+            <i class="fas fa-building"></i>
+          </div>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Downtown Condo</h3>
+          <p class="property-address">321 Main Street, City Center</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 1 bed</span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 850 sq ft</span>
+          </div>
+          <div class="property-price">$280,000</div>
+          <button class="btn btn-outline">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Property Card 5 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-placeholder">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="property-badge">Reduced</div>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Spacious Family Home</h3>
+          <p class="property-address">654 Pine Road, Westside</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 5 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 4 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 3,500 sq ft</span>
+          </div>
+          <div class="property-price">$650,000</div>
+          <button class="btn btn-outline">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Property Card 6 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-placeholder">
+            <i class="fas fa-building"></i>
+          </div>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Modern Loft</h3>
+          <p class="property-address">987 Industrial Blvd, Arts District</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,600 sq ft</span>
+          </div>
+          <div class="property-price">$420,000</div>
+          <button class="btn btn-outline">View Details</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Pagination -->
+    <div class="pagination">
+      <button class="pagination-btn active">1</button>
+      <button class="pagination-btn">2</button>
+      <button class="pagination-btn">3</button>
+      <button class="pagination-btn">Next</button>
+    </div>
+  </div>
+</div>

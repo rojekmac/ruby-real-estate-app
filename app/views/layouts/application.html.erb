@@ -9,19 +9,57 @@
  <%= javascript_importmap_tags %>
  </head>
 <body>
- <header>
-  <h1>My Real Estate</h1>
- </header>
  <nav>
   <%= link_to "HOME", root_path %>
   <%= link_to "LISTINGS", pages_listings_path %>
   <%= link_to "CONTACT", pages_contact_path %>
-  <%= link_to "ABOUT", pages_about_path %>
-  <%= link_to "PROPERTY SEARCH", properties_search_path %>
-  <%= link_to "NEWEST DEVELOPMENTS", properties_developments_path %>
-  <%= link_to "PROFILE", users_profile_path %>
-  <%= link_to "LOGIN", users_login_path %>
+  <a href="<%= root_path %>#about-section">ABOUT</a>
  </nav>
  <%= yield %>
+
+<!-- Back to Top Arrow -->
+<button id="back-to-top" title="Back to top" style="display:none;" aria-label="Back to top">
+  &#8679;
+</button>
+
+<script>
+  document.addEventListener('turbo:load', function() {
+    // Smooth scroll for anchor links
+    if (window.location.hash) {
+      const target = document.getElementById(window.location.hash.slice(1));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    const anchorLinks = document.querySelectorAll('a[href^="#"], a[href^="/"][href*="#"]');
+    anchorLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        const hash = href.includes('#') ? href.split('#')[1] : null;
+        if (hash) {
+          const target = document.getElementById(hash);
+          if (target) {
+            e.preventDefault();
+            history.pushState(null, '', '#' + hash);
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    // Back to Top Arrow
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
 </body>
 </html>
