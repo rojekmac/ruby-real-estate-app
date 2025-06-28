@@ -68,7 +68,7 @@
     
     <div class="listings-grid" id="listings-grid">
       <!-- Property Card 1 -->
-      <div class="property-card">
+      <div class="property-card" data-type="house" data-price="450000" data-bedrooms="3" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
           <div class="property-badge">New</div>
@@ -80,14 +80,24 @@
             <span class="detail"><i class="fas fa-bed"></i> 3 beds</span>
             <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
             <span class="detail"><i class="fas fa-ruler-combined"></i> 2,100 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2018</span>
           </div>
-          <div class="property-price">$450,000</div>
-          <button class="btn btn-outline">View Details</button>
+          <ul class="property-amenities">
+            <li><i class="fas fa-swimming-pool"></i> Pool</li>
+            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+            <li><i class="fas fa-tree"></i> Garden</li>
+          </ul>
+          <p class="property-description">A spacious, modern family home with open-plan living, large backyard, and close to schools and parks.</p>
+          <div class="property-actions">
+            <div class="property-price">$450,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
         </div>
       </div>
       
       <!-- Property Card 2 -->
-      <div class="property-card">
+      <div class="property-card" data-type="apartment" data-price="380000" data-bedrooms="2" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
           <div class="property-badge">Featured</div>
@@ -99,14 +109,24 @@
             <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
             <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
             <span class="detail"><i class="fas fa-ruler-combined"></i> 1,200 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2020</span>
           </div>
-          <div class="property-price">$380,000</div>
-          <button class="btn btn-outline">View Details</button>
+          <ul class="property-amenities">
+            <li><i class="fas fa-dumbbell"></i> Gym</li>
+            <li><i class="fas fa-shield-alt"></i> 24/7 Security</li>
+            <li><i class="fas fa-elevator"></i> Elevator</li>
+          </ul>
+          <p class="property-description">A luxury apartment in the heart of Midtown, featuring city views, modern kitchen, and private balcony.</p>
+          <div class="property-actions">
+            <div class="property-price">$380,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
         </div>
       </div>
       
       <!-- Property Card 3 -->
-      <div class="property-card">
+      <div class="property-card" data-type="townhouse" data-price="520000" data-bedrooms="4" data-bathrooms="3">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
@@ -117,14 +137,24 @@
             <span class="detail"><i class="fas fa-bed"></i> 4 beds</span>
             <span class="detail"><i class="fas fa-bath"></i> 3 baths</span>
             <span class="detail"><i class="fas fa-ruler-combined"></i> 2,800 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2015</span>
           </div>
-          <div class="property-price">$520,000</div>
-          <button class="btn btn-outline">View Details</button>
+          <ul class="property-amenities">
+            <li><i class="fas fa-fire"></i> Fireplace</li>
+            <li><i class="fas fa-tree"></i> Private Yard</li>
+            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+          </ul>
+          <p class="property-description">A charming townhouse with four bedrooms, three baths, and a cozy fireplace. Perfect for families.</p>
+          <div class="property-actions">
+            <div class="property-price">$520,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
         </div>
       </div>
       
       <!-- Property Card 4 -->
-      <div class="property-card">
+      <div class="property-card" data-type="condo" data-price="280000" data-bedrooms="1" data-bathrooms="1">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
@@ -135,14 +165,24 @@
             <span class="detail"><i class="fas fa-bed"></i> 1 bed</span>
             <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
             <span class="detail"><i class="fas fa-ruler-combined"></i> 850 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2022</span>
           </div>
-          <div class="property-price">$280,000</div>
-          <button class="btn btn-outline">View Details</button>
+          <ul class="property-amenities">
+            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+            <li><i class="fas fa-shield-alt"></i> Security</li>
+            <li><i class="fas fa-elevator"></i> Elevator</li>
+          </ul>
+          <p class="property-description">A modern downtown condo, ideal for singles or couples, with all amenities and great city access.</p>
+          <div class="property-actions">
+            <div class="property-price">$280,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
         </div>
       </div>
       
       <!-- Property Card 5 -->
-      <div class="property-card">
+      <div class="property-card" data-type="house" data-price="650000" data-bedrooms="5" data-bathrooms="4">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
           <div class="property-badge">Reduced</div>
@@ -154,14 +194,24 @@
             <span class="detail"><i class="fas fa-bed"></i> 5 beds</span>
             <span class="detail"><i class="fas fa-bath"></i> 4 baths</span>
             <span class="detail"><i class="fas fa-ruler-combined"></i> 3,500 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 3 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2012</span>
           </div>
-          <div class="property-price">$650,000</div>
-          <button class="btn btn-outline">View Details</button>
+          <ul class="property-amenities">
+            <li><i class="fas fa-tree"></i> Large Garden</li>
+            <li><i class="fas fa-swimming-pool"></i> Pool</li>
+            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+          </ul>
+          <p class="property-description">A large family home with five bedrooms, a big garden, and a private pool. Great for entertaining.</p>
+          <div class="property-actions">
+            <div class="property-price">$650,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
         </div>
       </div>
       
       <!-- Property Card 6 -->
-      <div class="property-card">
+      <div class="property-card" data-type="apartment" data-price="420000" data-bedrooms="2" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
@@ -172,19 +222,260 @@
             <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
             <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
             <span class="detail"><i class="fas fa-ruler-combined"></i> 1,600 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2019</span>
           </div>
-          <div class="property-price">$420,000</div>
-          <button class="btn btn-outline">View Details</button>
+          <ul class="property-amenities">
+            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+            <li><i class="fas fa-dumbbell"></i> Gym</li>
+            <li><i class="fas fa-elevator"></i> Elevator</li>
+          </ul>
+          <p class="property-description">A stylish loft apartment in the arts district, with modern finishes and great amenities.</p>
+          <div class="property-actions">
+            <div class="property-price">$420,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Property Card 7 -->
+      <div class="property-card" data-type="condo" data-price="210000" data-bedrooms="2" data-bathrooms="1">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">City Center Condo</h3>
+          <p class="property-address">12 Market St, Downtown</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 900 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2021</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-elevator"></i> Elevator</li>
+            <li><i class="fas fa-shield-alt"></i> Security</li>
+          </ul>
+          <p class="property-description">Modern condo in the heart of the city, close to all amenities.</p>
+          <div class="property-actions">
+            <div class="property-price">$210,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 8 -->
+      <div class="property-card" data-type="house" data-price="320000" data-bedrooms="3" data-bathrooms="2">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Suburban House</h3>
+          <p class="property-address">88 Maple Ave, Suburbs</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 3 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,800 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2016</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-tree"></i> Garden</li>
+            <li><i class="fas fa-fire"></i> Fireplace</li>
+          </ul>
+          <p class="property-description">A cozy house in a quiet neighborhood, perfect for families.</p>
+          <div class="property-actions">
+            <div class="property-price">$320,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 9 -->
+      <div class="property-card" data-type="apartment" data-price="250000" data-bedrooms="1" data-bathrooms="1">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Studio Apartment</h3>
+          <p class="property-address">5 River Rd, Midtown</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 1 bed</span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 600 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2023</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+          </ul>
+          <p class="property-description">Compact studio apartment, ideal for singles or students.</p>
+          <div class="property-actions">
+            <div class="property-price">$250,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 10 -->
+      <div class="property-card" data-type="townhouse" data-price="410000" data-bedrooms="3" data-bathrooms="2">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Family Townhouse</h3>
+          <p class="property-address">77 Oak Lane, Westside</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 3 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,500 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2017</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-tree"></i> Private Yard</li>
+            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+          </ul>
+          <p class="property-description">Spacious townhouse with private yard and modern amenities.</p>
+          <div class="property-actions">
+            <div class="property-price">$410,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 11 -->
+      <div class="property-card" data-type="condo" data-price="600000" data-bedrooms="4" data-bathrooms="3">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Luxury Penthouse</h3>
+          <p class="property-address">1 Skyview Dr, Uptown</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 4 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 3 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 3,000 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2021</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-swimming-pool"></i> Pool</li>
+            <li><i class="fas fa-dumbbell"></i> Gym</li>
+            <li><i class="fas fa-elevator"></i> Elevator</li>
+          </ul>
+          <p class="property-description">Stunning penthouse with panoramic views and luxury features.</p>
+          <div class="property-actions">
+            <div class="property-price">$600,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 12 -->
+      <div class="property-card" data-type="apartment" data-price="195000" data-bedrooms="1" data-bathrooms="1">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Budget Apartment</h3>
+          <p class="property-address">22 Budget St, Eastside</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 1 bed</span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 500 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 0 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2010</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+          </ul>
+          <p class="property-description">Affordable apartment, great for first-time buyers or investors.</p>
+          <div class="property-actions">
+            <div class="property-price">$195,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 13 -->
+      <div class="property-card" data-type="house" data-price="540000" data-bedrooms="4" data-bathrooms="3">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Large Detached House</h3>
+          <p class="property-address">99 Grand Ave, Northside</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 4 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 3 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,700 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2014</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-tree"></i> Garden</li>
+            <li><i class="fas fa-fire"></i> Fireplace</li>
+          </ul>
+          <p class="property-description">Spacious detached house with a large garden and modern kitchen.</p>
+          <div class="property-actions">
+            <div class="property-price">$540,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 14 -->
+      <div class="property-card" data-type="townhouse" data-price="375000" data-bedrooms="2" data-bathrooms="2">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Modern Townhouse</h3>
+          <p class="property-address">33 Modern St, Midtown</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,200 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2018</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-tree"></i> Private Yard</li>
+            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+          </ul>
+          <p class="property-description">Modern townhouse with private yard and open-plan living.</p>
+          <div class="property-actions">
+            <div class="property-price">$375,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 15 -->
+      <div class="property-card" data-type="apartment" data-price="305000" data-bedrooms="2" data-bathrooms="1">
+        <div class="property-image">
+          <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+        </div>
+        <div class="property-content">
+          <h3 class="property-title">Central Apartment</h3>
+          <p class="property-address">44 Central Ave, Downtown</p>
+          <div class="property-details">
+            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 950 sq ft</span>
+            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
+            <span class="detail"><i class="fas fa-calendar"></i> Built 2015</span>
+          </div>
+          <ul class="property-amenities">
+            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+            <li><i class="fas fa-elevator"></i> Elevator</li>
+          </ul>
+          <p class="property-description">Bright apartment in the city center, close to transport and shops.</p>
+          <div class="property-actions">
+            <div class="property-price">$305,000</div>
+            <button class="btn btn-outline">View Details</button>
+          </div>
         </div>
       </div>
     </div>
     
     <!-- Pagination -->
     <div class="pagination">
-      <button class="pagination-btn active">1</button>
-      <button class="pagination-btn">2</button>
-      <button class="pagination-btn">3</button>
-      <button class="pagination-btn">Next</button>
+      <!-- Pagination buttons will be generated by JavaScript -->
     </div>
   </div>
 </div>
