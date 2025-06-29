@@ -664,45 +664,59 @@ nav a:focus::after {
   flex-shrink: 0;
 }
 
-/* Pagination */
-.pagination {
+/* === Custom Kaminari Pagination Styles (Scoped) === */
+.kaminari-pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
-  margin-top: 3rem;
-  flex-wrap: wrap;
+  margin: 2rem 0 0 0;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
-.pagination-btn {
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--light-gray);
-  background: var(--white);
-  color: var(--medium-gray);
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-weight: 500;
-  min-width: 40px;
+.kaminari-pagination .pagination-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  color: #6c757d;
+  border: none;
+  margin: 0;
+  transition: background 0.2s, color 0.2s;
+  min-width: 36px;
   text-align: center;
+  box-shadow: none;
 }
 
-.pagination-btn.active,
-.pagination-btn:hover {
-  background: var(--primary-red);
-  color: var(--white);
-  border-color: var(--primary-red);
+.kaminari-pagination .pagination-btn:hover,
+.kaminari-pagination .pagination-btn:focus {
+  background: #e74c3c;
+  color: #fff;
 }
 
-.pagination-btn:hover,
-.pagination-btn:focus {
-  transform: scale(1.04);
-  box-shadow: 0 4px 16px rgba(74, 28, 46, 0.1);
-  z-index: 2;
+.kaminari-pagination .pagination-btn.active,
+.kaminari-pagination .pagination-btn.active:focus {
+  background: #e74c3c;
+  color: #fff;
+  font-weight: 700;
+  cursor: default;
 }
 
-.pagination-btn:active {
-  transform: scale(0.98);
-  box-shadow: 0 2px 8px rgba(74, 28, 46, 0.12);
+.kaminari-pagination .pagination-btn.gap {
+  background: transparent;
+  color: #b0b0b0;
+  cursor: default;
+  box-shadow: none;
+}
+
+/* Remove underline/line from pagination links */
+.kaminari-pagination a::after,
+.kaminari-pagination .pagination-btn::after {
+  display: none !important;
+  content: none !important;
 }
 
 /* About and Contact Sections */
