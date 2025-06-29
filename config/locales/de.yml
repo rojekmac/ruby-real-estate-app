@@ -202,3 +202,8 @@ de:
 
   # Form Fields
   password: "Passwort"
+
+  views:
+    pagination:
+      next: "Weiter"
+      previous: "Zurück"
