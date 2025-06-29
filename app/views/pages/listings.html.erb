@@ -1,8 +1,10 @@
+<% content_for :title, t('page_title_listings') %>
+
 <!-- Page Header -->
 <div class="page-header">
   <div class="container">
-    <h1 class="page-title">Property Listings</h1>
-    <p class="page-subtitle">Discover exceptional properties available for sale</p>
+    <h1 class="page-title"><%= t('listings_title') %></h1>
+    <p class="page-subtitle"><%= t('hero_subtitle') %></p>
   </div>
 </div>
 
@@ -11,50 +13,50 @@
   <div class="container">
     <div class="filters-form">
       <div class="filter-group">
-        <label for="property-type">Property Type</label>
+        <label for="property-type"><%= t('filter_type') %></label>
         <select id="property-type" class="filter-select">
-          <option value="">All Types</option>
-          <option value="house">House</option>
-          <option value="apartment">Apartment</option>
-          <option value="condo">Condo</option>
-          <option value="townhouse">Townhouse</option>
+          <option value=""><%= t('filter_type') %></option>
+          <option value="house"><%= t('property_type_house') %></option>
+          <option value="apartment"><%= t('property_type_apartment') %></option>
+          <option value="condo"><%= t('property_type_condo') %></option>
+          <option value="townhouse"><%= t('property_type_townhouse') %></option>
         </select>
       </div>
       
       <div class="filter-group">
-        <label for="price-range">Price Range</label>
+        <label for="price-range"><%= t('filter_price') %></label>
         <select id="price-range" class="filter-select">
-          <option value="">Any Price</option>
-          <option value="0-200000">Under $200,000</option>
-          <option value="200000-400000">$200,000 - $400,000</option>
-          <option value="400000-600000">$400,000 - $600,000</option>
-          <option value="600000+">$600,000+</option>
+          <option value=""><%= t('filter_any_price') %></option>
+          <option value="0-200000"><%= t('filter_under_200k') %></option>
+          <option value="200000-400000"><%= t('filter_200k_400k') %></option>
+          <option value="400000-600000"><%= t('filter_400k_600k') %></option>
+          <option value="600000+"><%= t('filter_600k_plus') %></option>
         </select>
       </div>
       
       <div class="filter-group">
-        <label for="bedrooms">Bedrooms</label>
+        <label for="bedrooms"><%= t('filter_bedrooms') %></label>
         <select id="bedrooms" class="filter-select">
-          <option value="">Any</option>
-          <option value="1">1+</option>
-          <option value="2">2+</option>
-          <option value="3">3+</option>
-          <option value="4">4+</option>
+          <option value=""><%= t('filter_any') %></option>
+          <option value="1"><%= t('filter_1_plus') %></option>
+          <option value="2"><%= t('filter_2_plus') %></option>
+          <option value="3"><%= t('filter_3_plus') %></option>
+          <option value="4"><%= t('filter_4_plus') %></option>
         </select>
       </div>
       
       <div class="filter-group">
-        <label for="bathrooms">Bathrooms</label>
+        <label for="bathrooms"><%= t('filter_bathrooms') %></label>
         <select id="bathrooms" class="filter-select">
-          <option value="">Any</option>
-          <option value="1">1+</option>
-          <option value="2">2+</option>
-          <option value="3">3+</option>
+          <option value=""><%= t('filter_any') %></option>
+          <option value="1"><%= t('filter_1_plus') %></option>
+          <option value="2"><%= t('filter_2_plus') %></option>
+          <option value="3"><%= t('filter_3_plus') %></option>
         </select>
       </div>
       
-      <button class="btn btn-primary filter-btn">Apply Filters</button>
-      <button class="btn btn-secondary reset-filters-btn" type="button">Reset Filters</button>
+      <button class="btn btn-primary filter-btn"><%= t('filter_apply') %></button>
+      <button class="btn btn-secondary reset-filters-btn" type="button"><%= t('filter_reset') %></button>
     </div>
   </div>
 </div>
@@ -63,8 +65,8 @@
 <div class="listings-section">
   <div class="container">
     <div class="listings-header">
-      <h2>Available Properties</h2>
-      <div class="listings-count">Showing <span id="property-count">12</span> properties</div>
+      <h2><%= t('listings_title') %></h2>
+      <div class="listings-count"><%= t('listings_showing_count', count: 12) %></div>
     </div>
     
     <div class="listings-grid" id="listings-grid">
@@ -72,27 +74,27 @@
       <div class="property-card" data-type="house" data-price="450000" data-bedrooms="3" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
-          <div class="property-badge">New</div>
+          <div class="property-badge"><%= t('property_badge_new') %></div>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Modern Family Home</h3>
-          <p class="property-address">123 Oak Street, Downtown</p>
+          <h3 class="property-title"><%= t('property_title_modern_family') %></h3>
+          <p class="property-address"><%= t('property_address_modern_family') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 3 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,100 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2018</span>
+            <span class="detail"><i class="fas fa-bed"></i> 3 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,100 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 2 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2018</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-swimming-pool"></i> Pool</li>
-            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
-            <li><i class="fas fa-tree"></i> Garden</li>
+            <li><i class="fas fa-swimming-pool"></i> <%= t('property_amenity_pool') %></li>
+            <li><i class="fas fa-wifi"></i> <%= t('property_amenity_internet') %></li>
+            <li><i class="fas fa-tree"></i> <%= t('property_amenity_garden') %></li>
           </ul>
-          <p class="property-description">A spacious, modern family home with open-plan living, large backyard, and close to schools and parks.</p>
+          <p class="property-description"><%= t('property_desc_modern_family') %></p>
           <div class="property-actions">
             <div class="property-price">$450,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
@@ -101,27 +103,27 @@
       <div class="property-card" data-type="apartment" data-price="380000" data-bedrooms="2" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
-          <div class="property-badge">Featured</div>
+          <div class="property-badge"><%= t('property_badge_featured') %></div>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Luxury Apartment</h3>
-          <p class="property-address">456 Park Avenue, Midtown</p>
+          <h3 class="property-title"><%= t('property_title_luxury_apartment') %></h3>
+          <p class="property-address"><%= t('property_address_luxury_apartment') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,200 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2020</span>
+            <span class="detail"><i class="fas fa-bed"></i> 2 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,200 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 1 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2020</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-dumbbell"></i> Gym</li>
-            <li><i class="fas fa-shield-alt"></i> 24/7 Security</li>
-            <li><i class="fas fa-elevator"></i> Elevator</li>
+            <li><i class="fas fa-dumbbell"></i> <%= t('property_amenity_gym') %></li>
+            <li><i class="fas fa-shield-alt"></i> <%= t('property_amenity_security') %></li>
+            <li><i class="fas fa-elevator"></i> <%= t('property_amenity_elevator') %></li>
           </ul>
-          <p class="property-description">A luxury apartment in the heart of Midtown, featuring city views, modern kitchen, and private balcony.</p>
+          <p class="property-description"><%= t('property_desc_luxury_apartment') %></p>
           <div class="property-actions">
             <div class="property-price">$380,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
@@ -132,24 +134,24 @@
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Cozy Townhouse</h3>
-          <p class="property-address">789 Elm Court, Suburbs</p>
+          <h3 class="property-title"><%= t('property_title_cozy_townhouse') %></h3>
+          <p class="property-address"><%= t('property_address_cozy_townhouse') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 4 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 3 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,800 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2015</span>
+            <span class="detail"><i class="fas fa-bed"></i> 4 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 3 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,800 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 2 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2015</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-fire"></i> Fireplace</li>
-            <li><i class="fas fa-tree"></i> Private Yard</li>
-            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+            <li><i class="fas fa-fire"></i> <%= t('property_amenity_fireplace') %></li>
+            <li><i class="fas fa-tree"></i> <%= t('property_amenity_private_yard') %></li>
+            <li><i class="fas fa-dog"></i> <%= t('property_amenity_pet_friendly') %></li>
           </ul>
-          <p class="property-description">A charming townhouse with four bedrooms, three baths, and a cozy fireplace. Perfect for families.</p>
+          <p class="property-description"><%= t('property_desc_cozy_townhouse') %></p>
           <div class="property-actions">
             <div class="property-price">$520,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
@@ -160,24 +162,24 @@
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Downtown Condo</h3>
-          <p class="property-address">321 Main Street, City Center</p>
+          <h3 class="property-title"><%= t('property_title_downtown_condo') %></h3>
+          <p class="property-address"><%= t('property_address_downtown_condo') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 1 bed</span>
-            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 850 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2022</span>
+            <span class="detail"><i class="fas fa-bed"></i> 1 <%= t('property_beds').singularize %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 <%= t('property_baths').singularize %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 850 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 1 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2022</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
-            <li><i class="fas fa-shield-alt"></i> Security</li>
-            <li><i class="fas fa-elevator"></i> Elevator</li>
+            <li><i class="fas fa-wifi"></i> <%= t('property_amenity_internet') %></li>
+            <li><i class="fas fa-shield-alt"></i> <%= t('property_amenity_security_basic') %></li>
+            <li><i class="fas fa-elevator"></i> <%= t('property_amenity_elevator') %></li>
           </ul>
-          <p class="property-description">A modern downtown condo, ideal for singles or couples, with all amenities and great city access.</p>
+          <p class="property-description"><%= t('property_desc_downtown_condo') %></p>
           <div class="property-actions">
             <div class="property-price">$280,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
@@ -186,27 +188,27 @@
       <div class="property-card" data-type="house" data-price="650000" data-bedrooms="5" data-bathrooms="4">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
-          <div class="property-badge">Reduced</div>
+          <div class="property-badge"><%= t('property_badge_reduced') %></div>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Spacious Family Home</h3>
-          <p class="property-address">654 Pine Road, Westside</p>
+          <h3 class="property-title"><%= t('property_title_spacious_family') %></h3>
+          <p class="property-address"><%= t('property_address_spacious_family') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 5 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 4 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 3,500 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 3 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2012</span>
+            <span class="detail"><i class="fas fa-bed"></i> 5 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 4 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 3,500 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 3 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2012</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-tree"></i> Large Garden</li>
-            <li><i class="fas fa-swimming-pool"></i> Pool</li>
-            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+            <li><i class="fas fa-tree"></i> <%= t('property_amenity_large_garden') %></li>
+            <li><i class="fas fa-swimming-pool"></i> <%= t('property_amenity_pool') %></li>
+            <li><i class="fas fa-dog"></i> <%= t('property_amenity_pet_friendly') %></li>
           </ul>
-          <p class="property-description">A large family home with five bedrooms, a big garden, and a private pool. Great for entertaining.</p>
+          <p class="property-description"><%= t('property_desc_spacious_family') %></p>
           <div class="property-actions">
             <div class="property-price">$650,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
@@ -217,24 +219,24 @@
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Modern Loft</h3>
-          <p class="property-address">987 Industrial Blvd, Arts District</p>
+          <h3 class="property-title"><%= t('property_title_modern_loft') %></h3>
+          <p class="property-address"><%= t('property_address_modern_loft') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,600 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2019</span>
+            <span class="detail"><i class="fas fa-bed"></i> 2 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,600 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 1 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2019</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
-            <li><i class="fas fa-dumbbell"></i> Gym</li>
-            <li><i class="fas fa-elevator"></i> Elevator</li>
+            <li><i class="fas fa-wifi"></i> <%= t('property_amenity_internet') %></li>
+            <li><i class="fas fa-dumbbell"></i> <%= t('property_amenity_gym') %></li>
+            <li><i class="fas fa-elevator"></i> <%= t('property_amenity_elevator') %></li>
           </ul>
-          <p class="property-description">A stylish loft apartment in the arts district, with modern finishes and great amenities.</p>
+          <p class="property-description"><%= t('property_desc_modern_loft') %></p>
           <div class="property-actions">
             <div class="property-price">$420,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
@@ -245,237 +247,245 @@
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">City Center Condo</h3>
-          <p class="property-address">12 Market St, Downtown</p>
+          <h3 class="property-title"><%= t('property_title_city_center_condo') %></h3>
+          <p class="property-address"><%= t('property_address_city_center_condo') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 900 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2021</span>
+            <span class="detail"><i class="fas fa-bed"></i> 2 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 <%= t('property_baths').singularize %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 900 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 1 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2021</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-elevator"></i> Elevator</li>
-            <li><i class="fas fa-shield-alt"></i> Security</li>
+            <li><i class="fas fa-elevator"></i> <%= t('property_amenity_elevator') %></li>
+            <li><i class="fas fa-shield-alt"></i> <%= t('property_amenity_security_basic') %></li>
           </ul>
-          <p class="property-description">Modern condo in the heart of the city, close to all amenities.</p>
+          <p class="property-description"><%= t('property_desc_city_center_condo') %></p>
           <div class="property-actions">
             <div class="property-price">$210,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 8 -->
       <div class="property-card" data-type="house" data-price="320000" data-bedrooms="3" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Suburban House</h3>
-          <p class="property-address">88 Maple Ave, Suburbs</p>
+          <h3 class="property-title"><%= t('property_title_suburban_house') %></h3>
+          <p class="property-address"><%= t('property_address_suburban_house') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 3 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,800 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2016</span>
+            <span class="detail"><i class="fas fa-bed"></i> 3 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,800 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 2 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2016</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-tree"></i> Garden</li>
-            <li><i class="fas fa-fire"></i> Fireplace</li>
+            <li><i class="fas fa-tree"></i> <%= t('property_amenity_garden') %></li>
+            <li><i class="fas fa-fire"></i> <%= t('property_amenity_fireplace') %></li>
           </ul>
-          <p class="property-description">A cozy house in a quiet neighborhood, perfect for families.</p>
+          <p class="property-description"><%= t('property_desc_suburban_house') %></p>
           <div class="property-actions">
             <div class="property-price">$320,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 9 -->
       <div class="property-card" data-type="apartment" data-price="250000" data-bedrooms="1" data-bathrooms="1">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Studio Apartment</h3>
-          <p class="property-address">5 River Rd, Midtown</p>
+          <h3 class="property-title"><%= t('property_title_studio_apartment') %></h3>
+          <p class="property-address"><%= t('property_address_studio_apartment') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 1 bed</span>
-            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 600 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2023</span>
+            <span class="detail"><i class="fas fa-bed"></i> 1 <%= t('property_beds').singularize %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 <%= t('property_baths').singularize %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 600 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 1 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2023</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+            <li><i class="fas fa-wifi"></i> <%= t('property_amenity_internet') %></li>
           </ul>
-          <p class="property-description">Compact studio apartment, ideal for singles or students.</p>
+          <p class="property-description"><%= t('property_desc_studio_apartment') %></p>
           <div class="property-actions">
             <div class="property-price">$250,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 10 -->
       <div class="property-card" data-type="townhouse" data-price="410000" data-bedrooms="3" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Family Townhouse</h3>
-          <p class="property-address">77 Oak Lane, Westside</p>
+          <h3 class="property-title"><%= t('property_title_family_townhouse') %></h3>
+          <p class="property-address"><%= t('property_address_family_townhouse') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 3 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,500 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2017</span>
+            <span class="detail"><i class="fas fa-bed"></i> 3 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,500 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 2 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2017</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-tree"></i> Private Yard</li>
-            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+            <li><i class="fas fa-tree"></i> <%= t('property_amenity_private_yard') %></li>
+            <li><i class="fas fa-dog"></i> <%= t('property_amenity_pet_friendly') %></li>
           </ul>
-          <p class="property-description">Spacious townhouse with private yard and modern amenities.</p>
+          <p class="property-description"><%= t('property_desc_family_townhouse') %></p>
           <div class="property-actions">
             <div class="property-price">$410,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 11 -->
       <div class="property-card" data-type="condo" data-price="600000" data-bedrooms="4" data-bathrooms="3">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Luxury Penthouse</h3>
-          <p class="property-address">1 Skyview Dr, Uptown</p>
+          <h3 class="property-title"><%= t('property_title_luxury_penthouse') %></h3>
+          <p class="property-address"><%= t('property_address_luxury_penthouse') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 4 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 3 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 3,000 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2021</span>
+            <span class="detail"><i class="fas fa-bed"></i> 4 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 3 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 3,000 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 2 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2021</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-swimming-pool"></i> Pool</li>
-            <li><i class="fas fa-dumbbell"></i> Gym</li>
-            <li><i class="fas fa-elevator"></i> Elevator</li>
+            <li><i class="fas fa-swimming-pool"></i> <%= t('property_amenity_pool') %></li>
+            <li><i class="fas fa-dumbbell"></i> <%= t('property_amenity_gym') %></li>
+            <li><i class="fas fa-elevator"></i> <%= t('property_amenity_elevator') %></li>
           </ul>
-          <p class="property-description">Stunning penthouse with panoramic views and luxury features.</p>
+          <p class="property-description"><%= t('property_desc_luxury_penthouse') %></p>
           <div class="property-actions">
             <div class="property-price">$600,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 12 -->
       <div class="property-card" data-type="apartment" data-price="195000" data-bedrooms="1" data-bathrooms="1">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Budget Apartment</h3>
-          <p class="property-address">22 Budget St, Eastside</p>
+          <h3 class="property-title"><%= t('property_title_budget_apartment') %></h3>
+          <p class="property-address"><%= t('property_address_budget_apartment') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 1 bed</span>
-            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 500 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 0 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2010</span>
+            <span class="detail"><i class="fas fa-bed"></i> 1 <%= t('property_beds').singularize %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 <%= t('property_baths').singularize %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 500 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 0 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2010</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
+            <li><i class="fas fa-wifi"></i> <%= t('property_amenity_internet') %></li>
           </ul>
-          <p class="property-description">Affordable apartment, great for first-time buyers or investors.</p>
+          <p class="property-description"><%= t('property_desc_budget_apartment') %></p>
           <div class="property-actions">
             <div class="property-price">$195,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 13 -->
       <div class="property-card" data-type="house" data-price="540000" data-bedrooms="4" data-bathrooms="3">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Large Detached House</h3>
-          <p class="property-address">99 Grand Ave, Northside</p>
+          <h3 class="property-title"><%= t('property_title_large_detached') %></h3>
+          <p class="property-address"><%= t('property_address_large_detached') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 4 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 3 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,700 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 2 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2014</span>
+            <span class="detail"><i class="fas fa-bed"></i> 4 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 3 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 2,700 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 2 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2014</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-tree"></i> Garden</li>
-            <li><i class="fas fa-fire"></i> Fireplace</li>
+            <li><i class="fas fa-tree"></i> <%= t('property_amenity_garden') %></li>
+            <li><i class="fas fa-fire"></i> <%= t('property_amenity_fireplace') %></li>
           </ul>
-          <p class="property-description">Spacious detached house with a large garden and modern kitchen.</p>
+          <p class="property-description"><%= t('property_desc_large_detached') %></p>
           <div class="property-actions">
             <div class="property-price">$540,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 14 -->
       <div class="property-card" data-type="townhouse" data-price="375000" data-bedrooms="2" data-bathrooms="2">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Modern Townhouse</h3>
-          <p class="property-address">33 Modern St, Midtown</p>
+          <h3 class="property-title"><%= t('property_title_modern_townhouse') %></h3>
+          <p class="property-address"><%= t('property_address_modern_townhouse') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 2 baths</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,200 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2018</span>
+            <span class="detail"><i class="fas fa-bed"></i> 2 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 2 <%= t('property_baths') %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 1,200 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 1 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2018</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-tree"></i> Private Yard</li>
-            <li><i class="fas fa-dog"></i> Pet Friendly</li>
+            <li><i class="fas fa-tree"></i> <%= t('property_amenity_private_yard') %></li>
+            <li><i class="fas fa-dog"></i> <%= t('property_amenity_pet_friendly') %></li>
           </ul>
-          <p class="property-description">Modern townhouse with private yard and open-plan living.</p>
+          <p class="property-description"><%= t('property_desc_modern_townhouse') %></p>
           <div class="property-actions">
             <div class="property-price">$375,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
+      
       <!-- Property Card 15 -->
       <div class="property-card" data-type="apartment" data-price="305000" data-bedrooms="2" data-bathrooms="1">
         <div class="property-image">
           <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
         </div>
         <div class="property-content">
-          <h3 class="property-title">Central Apartment</h3>
-          <p class="property-address">44 Central Ave, Downtown</p>
+          <h3 class="property-title"><%= t('property_title_central_apartment') %></h3>
+          <p class="property-address"><%= t('property_address_central_apartment') %></p>
           <div class="property-details">
-            <span class="detail"><i class="fas fa-bed"></i> 2 beds</span>
-            <span class="detail"><i class="fas fa-bath"></i> 1 bath</span>
-            <span class="detail"><i class="fas fa-ruler-combined"></i> 950 sq ft</span>
-            <span class="detail"><i class="fas fa-car"></i> 1 parking</span>
-            <span class="detail"><i class="fas fa-calendar"></i> Built 2015</span>
+            <span class="detail"><i class="fas fa-bed"></i> 2 <%= t('property_beds') %></span>
+            <span class="detail"><i class="fas fa-bath"></i> 1 <%= t('property_baths').singularize %></span>
+            <span class="detail"><i class="fas fa-ruler-combined"></i> 950 <%= t('property_sqft') %></span>
+            <span class="detail"><i class="fas fa-car"></i> 1 <%= t('property_amenity_parking') %></span>
+            <span class="detail"><i class="fas fa-calendar"></i> <%= t('property_amenity_built') %> 2015</span>
           </div>
           <ul class="property-amenities">
-            <li><i class="fas fa-wifi"></i> High-speed Internet</li>
-            <li><i class="fas fa-elevator"></i> Elevator</li>
+            <li><i class="fas fa-wifi"></i> <%= t('property_amenity_internet') %></li>
+            <li><i class="fas fa-elevator"></i> <%= t('property_amenity_elevator') %></li>
           </ul>
-          <p class="property-description">Bright apartment in the city center, close to transport and shops.</p>
+          <p class="property-description"><%= t('property_desc_central_apartment') %></p>
           <div class="property-actions">
             <div class="property-price">$305,000</div>
-            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-outline"><%= t('property_view_details') %></button>
           </div>
         </div>
       </div>
     </div>
     
     <div id="no-results-message" style="display:none; text-align:center; color: var(--primary-burgundy); font-size: 1.2rem; margin: 2rem 0;">
-      No results found. Try adjusting your filters.
+      <%= t('no_results') %>
     </div>
     
     <!-- Pagination -->

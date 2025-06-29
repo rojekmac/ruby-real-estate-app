@@ -1,2 +1,35 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<% content_for :title, t('page_title_about') %>
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title"><%= t('about_title') %></h1>
+    <p class="page-subtitle"><%= t('about_subtitle') %></p>
+  </div>
+</div>
+
+<!-- About Content -->
+<div class="about-content-section">
+  <div class="container">
+    <div class="about-content">
+      <p><%= t('about_content') %></p>
+      
+      <div class="about-features">
+        <div class="about-feature">
+          <h3><%= t('feature_expertise_title') %></h3>
+          <p><%= t('feature_expertise_desc') %></p>
+        </div>
+        
+        <div class="about-feature">
+          <h3><%= t('feature_service_title') %></h3>
+          <p><%= t('feature_service_desc') %></p>
+        </div>
+        
+        <div class="about-feature">
+          <h3><%= t('feature_quality_title') %></h3>
+          <p><%= t('feature_quality_desc') %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

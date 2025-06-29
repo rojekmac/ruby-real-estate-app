@@ -1,2 +1,60 @@
-<h1>Services#valuation</h1>
-<p>Find me in app/views/services/valuation.html.erb</p>
+<% content_for :title, t('page_title_valuation') %>
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title"><%= t('services_valuation_title') %></h1>
+    <p class="page-subtitle"><%= t('services_valuation_subtitle') %></p>
+  </div>
+</div>
+
+<!-- Valuation Content -->
+<div class="valuation-content-section">
+  <div class="container">
+    <div class="valuation-content">
+      <p><%= t('services_valuation_content') %></p>
+      
+      <!-- Valuation Process -->
+      <div class="valuation-process">
+        <h3><%= t('action_valuation_title') %></h3>
+        
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4><%= t('action_contact_title') %></h4>
+              <p><%= t('action_contact_desc') %></p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4><%= t('action_search_title') %></h4>
+              <p><%= t('action_search_desc') %></p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4><%= t('action_valuation_title') %></h4>
+              <p><%= t('action_valuation_desc') %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Information -->
+      <div class="valuation-contact">
+        <h3><%= t('contact_title') %></h3>
+        <div class="contact-info">
+          <p><strong><%= t('contact_name') %>:</strong> Tobias Schwitalla</p>
+          <p><strong><%= t('contact_email') %>:</strong> tobias.schwitalla@example.com</p>
+          <p><strong><%= t('contact_phone') %>:</strong> +66 81 234 5678</p>
+          <p><strong><%= t('contact_location') %>:</strong> Bangkok, Thailand</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

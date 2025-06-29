@@ -28,4 +28,206 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  # Navigation
+  nav_home: "Home"
+  nav_properties: "Properties"
+  nav_services: "Services"
+  nav_about: "About"
+  nav_contact: "Contact"
+  nav_login: "Login"
+
+  # Hero Section
+  hero_title: "Find Your Dream Home"
+  hero_subtitle: "Discover exclusive properties in the best locations. Our experts help you find the perfect property."
+  hero_cta_primary: "Browse Properties"
+  hero_cta_secondary: "Learn More"
+
+  # Features Section
+  features_title: "Why Choose Us"
+  feature_expertise_title: "Local Expertise & Personal Experience since 2018"
+  feature_expertise_desc: "With over 6 years of experience in the Thai real estate market, I know not only the best locations, legal intricacies, and price developments – I also understand what German-speaking buyers truly value. This combination of market knowledge and cultural understanding ensures informed, secure decisions."
+  feature_service_title: "Independent Consultation on Equal Terms – in German"
+  feature_service_desc: "As a native Berliner, I speak your language – both literally and figuratively. I guide you honestly, transparently, and without sales pressure through the entire purchase process. You receive clarity about rights, obligations, and opportunities without language barriers or misunderstandings."
+  feature_quality_title: "Access to Verified Properties & Strong Local Partners"
+  feature_quality_desc: "I work exclusively with reputable, licensed agencies and project developers. This gives you access to hand-picked properties – whether for personal use or investment – with legally secure processes and personal support from the first inquiry to key handover."
+
+  # Quick Actions
+  actions_title: "Quick Actions"
+  action_search_title: "Search Properties"
+  action_search_desc: "Browse our extensive database"
+  action_valuation_title: "Valuation"
+  action_valuation_desc: "Get your property professionally valued"
+  action_contact_title: "Get in Touch"
+  action_contact_desc: "Speak with our experts"
+
+  # Property Listings
+  listings_title: "Available Properties"
+  filter_location: "Location"
+  filter_type: "Type"
+  filter_price: "Price"
+  filter_bedrooms: "Bedrooms"
+  filter_bathrooms: "Bathrooms"
+  filter_apply: "Apply Filters"
+  filter_reset: "Reset Filters"
+  no_results: "No results found"
+  property_type_house: "House"
+  property_type_apartment: "Apartment"
+  property_type_condo: "Condo"
+  property_type_townhouse: "Townhouse"
+  property_bedrooms: "Bedrooms"
+  property_bathrooms: "Bathrooms"
+  property_sqft: "sq ft"
+  property_view: "View"
+  property_contact: "Contact"
+  property_beds: "beds"
+  property_baths: "baths"
+  property_parking: "parking"
+  property_built: "Built"
+  property_view_details: "View Details"
+  property_badge_new: "New"
+  property_badge_featured: "Featured"
+  property_badge_reduced: "Reduced"
+
+  # Filter Options
+  filter_any_price: "Any Price"
+  filter_under_200k: "Under $200,000"
+  filter_200k_400k: "$200,000 - $400,000"
+  filter_400k_600k: "$400,000 - $600,000"
+  filter_600k_plus: "$600,000+"
+  filter_any: "Any"
+  filter_1_plus: "1+"
+  filter_2_plus: "2+"
+  filter_3_plus: "3+"
+  filter_4_plus: "4+"
+
+  # Property Titles
+  property_title_modern_family: "Modern Family Home"
+  property_title_luxury_apartment: "Luxury Apartment"
+  property_title_cozy_townhouse: "Cozy Townhouse"
+  property_title_downtown_condo: "Downtown Condo"
+  property_title_spacious_family: "Spacious Family Home"
+  property_title_modern_loft: "Modern Loft"
+  property_title_city_center_condo: "City Center Condo"
+  property_title_suburban_house: "Suburban House"
+  property_title_studio_apartment: "Studio Apartment"
+  property_title_family_townhouse: "Family Townhouse"
+  property_title_luxury_penthouse: "Luxury Penthouse"
+  property_title_budget_apartment: "Budget Apartment"
+  property_title_large_detached: "Large Detached House"
+  property_title_modern_townhouse: "Modern Townhouse"
+  property_title_central_apartment: "Central Apartment"
+
+  # Property Descriptions
+  property_desc_modern_family: "A spacious, modern family home with open-plan living, large backyard, and close to schools and parks."
+  property_desc_luxury_apartment: "A luxury apartment in the heart of Midtown, featuring city views, modern kitchen, and private balcony."
+  property_desc_cozy_townhouse: "A charming townhouse with four bedrooms, three baths, and a cozy fireplace. Perfect for families."
+  property_desc_downtown_condo: "A modern downtown condo, ideal for singles or couples, with all amenities and great city access."
+  property_desc_spacious_family: "A large family home with five bedrooms, a big garden, and a private pool. Great for entertaining."
+  property_desc_modern_loft: "A stylish loft apartment in the arts district, with modern finishes and great amenities."
+  property_desc_city_center_condo: "Modern condo in the heart of the city, close to all amenities."
+  property_desc_suburban_house: "A cozy house in a quiet neighborhood, perfect for families."
+  property_desc_studio_apartment: "Compact studio apartment, ideal for singles or students."
+  property_desc_family_townhouse: "Spacious townhouse with private yard and modern amenities."
+  property_desc_luxury_penthouse: "Stunning penthouse with panoramic views and luxury features."
+  property_desc_budget_apartment: "Affordable apartment, great for first-time buyers or investors."
+  property_desc_large_detached: "Spacious detached house with a large garden and modern kitchen."
+  property_desc_modern_townhouse: "Modern townhouse with private yard and open-plan living."
+  property_desc_central_apartment: "Bright apartment in the city center, close to transport and shops."
+
+  # Property Amenities
+  property_amenity_pool: "Pool"
+  property_amenity_internet: "High-speed Internet"
+  property_amenity_garden: "Garden"
+  property_amenity_gym: "Gym"
+  property_amenity_security: "24/7 Security"
+  property_amenity_elevator: "Elevator"
+  property_amenity_fireplace: "Fireplace"
+  property_amenity_private_yard: "Private Yard"
+  property_amenity_pet_friendly: "Pet Friendly"
+  property_amenity_large_garden: "Large Garden"
+  property_amenity_security_basic: "Security"
+
+  # About Page
+  about_title: "About Us"
+  about_subtitle: "Your Trusted Real Estate Partner"
+  about_content: "We are a leading real estate company with over 15 years of experience in the market. Our team of experienced professionals specializes in helping you find or sell the perfect property. We offer personal service, comprehensive market knowledge, and an extensive portfolio of high-quality properties."
+
+  # Contact Page
+  contact_title: "Contact"
+  contact_subtitle: "Let's Talk"
+  contact_content: "Ready to start your real estate journey? Contact us today for a personal consultation. Our team is here to help answer your questions and assist you with your real estate goals."
+  contact_name: "Name"
+  contact_email: "Email"
+  contact_phone: "Phone"
+  contact_location: "Location"
+
+  # Footer
+  footer_copyright: "© 2024 Real Estate. All rights reserved."
+
+  # Language Switcher
+  language_english: "English"
+  language_german: "Deutsch"
+  language_thai: "ไทย"
+
+  # Property Addresses
+  property_address_modern_family: "123 Oak Street, Downtown"
+  property_address_luxury_apartment: "456 Park Avenue, Midtown"
+  property_address_cozy_townhouse: "789 Elm Court, Suburbs"
+  property_address_downtown_condo: "321 Main Street, City Center"
+  property_address_spacious_family: "654 Pine Road, Westside"
+  property_address_modern_loft: "987 Industrial Blvd, Arts District"
+  property_address_city_center_condo: "12 Market St, Downtown"
+  property_address_suburban_house: "88 Maple Ave, Suburbs"
+  property_address_studio_apartment: "5 River Rd, Midtown"
+  property_address_family_townhouse: "77 Oak Lane, Westside"
+  property_address_luxury_penthouse: "1 Skyview Dr, Uptown"
+  property_address_budget_apartment: "22 Budget St, Eastside"
+  property_address_large_detached: "99 Grand Ave, Northside"
+  property_address_modern_townhouse: "33 Modern St, Midtown"
+  property_address_central_apartment: "44 Central Ave, Downtown"
+
+  # Unique Amenities (examples, add as needed)
+  property_amenity_parking: "Parking"
+  property_amenity_built: "Built"
+
+  # UI Elements
+  listings_showing_count: "Showing %{count} properties"
+  pagination_previous: "Previous"
+  pagination_next: "Next"
+
+  # Services Pages
+  services_valuation_title: "Property Valuation"
+  services_valuation_subtitle: "Professional Property Assessment"
+  services_valuation_content: "Get an accurate valuation of your property from our certified experts. We use market analysis, comparable sales, and current market trends to provide you with a comprehensive property assessment."
+
+  # Properties Pages
+  properties_search_title: "Property Search"
+  properties_search_subtitle: "Find Your Perfect Property"
+  properties_search_content: "Use our advanced search tools to find properties that match your criteria. Filter by location, price, size, and more."
+
+  properties_developments_title: "New Developments"
+  properties_developments_subtitle: "Latest Property Projects"
+  properties_developments_content: "Discover the newest property developments in prime locations. Get early access to pre-construction opportunities and special pricing."
+
+  # User Pages
+  users_login_title: "Login"
+  users_login_subtitle: "Access Your Account"
+  users_login_content: "Sign in to your account to manage your property searches, save favorites, and access exclusive content."
+
+  users_profile_title: "Profile"
+  users_profile_subtitle: "Your Account Information"
+  users_profile_content: "Manage your personal information, preferences, and saved properties."
+
+  # Page Titles
+  page_title_home: "Home - Real Estate"
+  page_title_about: "About Us - Real Estate"
+  page_title_contact: "Contact - Real Estate"
+  page_title_listings: "Property Listings - Real Estate"
+  page_title_search: "Property Search - Real Estate"
+  page_title_developments: "New Developments - Real Estate"
+  page_title_valuation: "Property Valuation - Real Estate"
+  page_title_login: "Login - Real Estate"
+  page_title_profile: "Profile - Real Estate"
+
+  # Form Fields
+  password: "Password"

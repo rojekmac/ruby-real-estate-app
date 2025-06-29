@@ -2,11 +2,11 @@
 <div class="hero-section">
   <div class="container hero-container" style="display: flex; align-items: center; justify-content: center; gap: 4rem;">
     <div class="hero-content">
-      <h1 class="hero-title">Find Your Dream Home</h1>
-      <p class="hero-subtitle">Discover exceptional properties in the most desirable locations</p>
+      <h1 class="hero-title"><%= t('hero_title') %></h1>
+      <p class="hero-subtitle"><%= t('hero_subtitle') %></p>
       <div class="hero-buttons">
-        <%= link_to "Explore What's for Sale", pages_listings_path, class: "btn btn-primary" %>
-        <a class="btn btn-secondary" href="<%= pages_listings_path %>">Property Search</a>
+        <%= link_to t('hero_cta_primary'), pages_listings_path, class: "btn btn-primary" %>
+        <a class="btn btn-secondary" href="<%= pages_listings_path %>"><%= t('hero_cta_secondary') %></a>
       </div>
     </div>
     <div class="hero-image">
@@ -18,28 +18,28 @@
 <!-- Features Section -->
 <div class="features-section">
   <div class="container">
-    <h2 class="section-title">Why Choose Us</h2>
+    <h2 class="section-title"><%= t('features_title') %></h2>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">
           <i class="fas fa-search"></i>
         </div>
-        <h3>Lokale Expertise & persönliche Erfahrung seit 2018</h3>
-        <p>Mit über 6 Jahren Erfahrung im thailändischen Immobilienmarkt kenne ich nicht nur die besten Lagen, rechtlichen Feinheiten und Preisentwicklungen – ich weiß auch, worauf deutschsprachige Käufer wirklich Wert legen. Diese Kombination aus Marktkenntnis und kulturellem Verständnis sorgt für fundierte, sichere Entscheidungen.</p>
+        <h3><%= t('feature_expertise_title') %></h3>
+        <p><%= t('feature_expertise_desc') %></p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">
           <i class="fas fa-comments"></i>
         </div>
-        <h3>Unabhängige Beratung auf Augenhöhe – auf Deutsch</h3>
-        <p>Als gebürtiger Berliner spreche ich Ihre Sprache – im wörtlichen wie im übertragenen Sinn. Ich begleite Sie ehrlich, transparent und ohne Verkaufsdruck durch den gesamten Kaufprozess. Sie erhalten Klarheit über Rechte, Pflichten und Möglichkeiten, ohne Sprachbarrieren oder Missverständnisse.</p>
+        <h3><%= t('feature_service_title') %></h3>
+        <p><%= t('feature_service_desc') %></p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">
           <i class="fas fa-handshake"></i>
         </div>
-        <h3>Zugang zu geprüften Immobilien & starken Partnern vor Ort</h3>
-        <p>Ich arbeite ausschließlich mit seriösen, lizenzierten Agenturen und Projektentwicklern zusammen. So erhalten Sie Zugang zu handverlesenen Immobilien – ob zur Eigennutzung oder als Investment – mit rechtssicherem Ablauf und persönlicher Betreuung von der ersten Anfrage bis zur Schlüsselübergabe.</p>
+        <h3><%= t('feature_quality_title') %></h3>
+        <p><%= t('feature_quality_desc') %></p>
       </div>
     </div>
   </div>
@@ -48,38 +48,38 @@
 <!-- Quick Actions Section -->
 <div class="quick-actions-section">
   <div class="container">
-    <h2 class="section-title">Quick Actions</h2>
+    <h2 class="section-title"><%= t('actions_title') %></h2>
     <div class="actions-grid">
       <%= link_to pages_listings_path, class: "action-card" do %>
         <div class="action-icon">
           <i class="fas fa-list"></i>
         </div>
-        <h3>View All Listings</h3>
-        <p>Browse our complete collection of available properties</p>
+        <h3><%= t('action_search_title') %></h3>
+        <p><%= t('action_search_desc') %></p>
       <% end %>
       
       <%= link_to properties_search_path, class: "action-card" do %>
         <div class="action-icon">
           <i class="fas fa-search"></i>
         </div>
-        <h3>Search Properties</h3>
-        <p>Find properties that match your specific criteria</p>
+        <h3><%= t('action_search_title') %></h3>
+        <p><%= t('action_search_desc') %></p>
       <% end %>
       
       <%= link_to properties_developments_path, class: "action-card" do %>
         <div class="action-icon">
           <i class="fas fa-building"></i>
         </div>
-        <h3>New Developments</h3>
-        <p>Explore the latest new construction projects</p>
+        <h3><%= t('action_valuation_title') %></h3>
+        <p><%= t('action_valuation_desc') %></p>
       <% end %>
       
       <%= link_to services_valuation_path, class: "action-card" do %>
         <div class="action-icon">
           <i class="fas fa-calculator"></i>
         </div>
-        <h3>Get Valuation</h3>
-        <p>Get a professional valuation for your property</p>
+        <h3><%= t('action_contact_title') %></h3>
+        <p><%= t('action_contact_desc') %></p>
       <% end %>
     </div>
   </div>
@@ -87,23 +87,23 @@
 
 <!-- About Section -->
 <div id="about-section" class="about-section">
-  <h2 class="section-title">About Us</h2>
+  <h2 class="section-title"><%= t('about_title') %></h2>
   <p class="about-text">
-    Welcome to Thailand Eigentum! We are dedicated to helping you find your dream property in Thailand. With years of experience in the real estate market, our team provides expert guidance, market insights, and a curated selection of properties to suit every lifestyle and budget. Whether you're looking for a family home, a luxury apartment, or an investment opportunity, we are here to make your property journey smooth and successful.
+    <%= t('about_content') %>
   </p>
 </div>
 
 <!-- Contact Section -->
 <div id="contact-section" class="contact-section">
-  <h2 class="section-title">Contact</h2>
+  <h2 class="section-title"><%= t('contact_title') %></h2>
   <p class="contact-text">
-    Have questions or want to get in touch? Reach out to us!
+    <%= t('contact_content') %>
   </p>
   <div class="contact-details">
-    <strong>Name:</strong> Tobias Schwitalla<br>
-    <strong>Email:</strong> tobias.schwitalla@example.com<br>
-    <strong>Phone:</strong> +66 81 234 5678<br>
-    <strong>Location:</strong> Bangkok, Thailand
+    <strong><%= t('contact_name') %>:</strong> Tobias Schwitalla<br>
+    <strong><%= t('contact_email') %>:</strong> tobias.schwitalla@example.com<br>
+    <strong><%= t('contact_phone') %>:</strong> +66 81 234 5678<br>
+    <strong><%= t('contact_location') %>:</strong> Bangkok, Thailand
   </div>
 </div>
 

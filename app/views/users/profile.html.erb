@@ -1,2 +1,39 @@
-<h1>Users#profile</h1>
-<p>Find me in app/views/users/profile.html.erb</p>
+<% content_for :title, t('page_title_profile') %>
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title"><%= t('users_profile_title') %></h1>
+    <p class="page-subtitle"><%= t('users_profile_subtitle') %></p>
+  </div>
+</div>
+
+<!-- Profile Content -->
+<div class="profile-content-section">
+  <div class="container">
+    <div class="profile-content">
+      <p><%= t('users_profile_content') %></p>
+      
+      <!-- Profile Information -->
+      <div class="profile-info">
+        <h3><%= t('contact_name') %></h3>
+        <p>Tobias Schwitalla</p>
+        
+        <h3><%= t('contact_email') %></h3>
+        <p>tobias.schwitalla@example.com</p>
+        
+        <h3><%= t('contact_phone') %></h3>
+        <p>+66 81 234 5678</p>
+        
+        <h3><%= t('contact_location') %></h3>
+        <p>Bangkok, Thailand</p>
+      </div>
+      
+      <!-- Saved Properties -->
+      <div class="saved-properties">
+        <h3><%= t('listings_title') %></h3>
+        <p><%= t('action_search_desc') %></p>
+      </div>
+    </div>
+  </div>
+</div>

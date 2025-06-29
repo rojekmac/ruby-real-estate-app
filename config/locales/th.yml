@@ -1,0 +1,204 @@
+th:
+  # Navigation
+  nav_home: "หน้าแรก"
+  nav_properties: "อสังหาริมทรัพย์"
+  nav_services: "บริการ"
+  nav_about: "เกี่ยวกับเรา"
+  nav_contact: "ติดต่อ"
+  nav_login: "เข้าสู่ระบบ"
+
+  # Hero Section
+  hero_title: "ค้นหาบ้านในฝันของคุณ"
+  hero_subtitle: "ค้นพบอสังหาริมทรัพย์ระดับพรีเมียมในทำเลที่ดีที่สุด ผู้เชี่ยวชาญของเราช่วยคุณหาอสังหาริมทรัพย์ที่สมบูรณ์แบบ"
+  hero_cta_primary: "ดูอสังหาริมทรัพย์"
+  hero_cta_secondary: "เรียนรู้เพิ่มเติม"
+
+  # Features Section
+  features_title: "ทำไมต้องเลือกเรา"
+  feature_expertise_title: "ความเชี่ยวชาญท้องถิ่นและประสบการณ์ส่วนตัวตั้งแต่ปี 2018"
+  feature_expertise_desc: "ด้วยประสบการณ์มากกว่า 6 ปีในตลาดอสังหาริมทรัพย์ไทย ฉันไม่เพียงแต่รู้จักทำเลที่ดีที่สุด ความซับซ้อนทางกฎหมาย และการพัฒนาราคาเท่านั้น แต่ยังเข้าใจสิ่งที่ผู้ซื้อที่พูดภาษาเยอรมันให้ความสำคัญจริงๆ การผสมผสานระหว่างความรู้ตลาดและความเข้าใจทางวัฒนธรรมนี้ทำให้เกิดการตัดสินใจที่รอบรู้และปลอดภัย"
+  feature_service_title: "การให้คำปรึกษาอิสระในระดับเดียวกัน – เป็นภาษาเยอรมัน"
+  feature_service_desc: "ในฐานะชาวเบอร์ลินโดยกำเนิด ฉันพูดภาษาของคุณ – ทั้งในความหมายตามตัวอักษรและเชิงเปรียบเทียบ ฉันแนะนำคุณอย่างซื่อสัตย์ โปร่งใส และไม่มีแรงกดดันในการขายตลอดกระบวนการซื้อ คุณได้รับความชัดเจนเกี่ยวกับสิทธิ หน้าที่ และโอกาสโดยไม่มีอุปสรรคทางภาษาหรือความเข้าใจผิด"
+  feature_quality_title: "เข้าถึงอสังหาริมทรัพย์ที่ผ่านการตรวจสอบและพันธมิตรที่แข็งแกร่งในท้องถิ่น"
+  feature_quality_desc: "ฉันทำงานเฉพาะกับบริษัทเอเจนซี่และนักพัฒนาโครงการที่มีใบอนุญาตและน่าเชื่อถือเท่านั้น ซึ่งทำให้คุณเข้าถึงอสังหาริมทรัพย์ที่คัดสรรมาแล้ว – ไม่ว่าจะเพื่อการใช้งานส่วนตัวหรือการลงทุน – ด้วยกระบวนการที่ปลอดภัยทางกฎหมายและการสนับสนุนส่วนตัวตั้งแต่การสอบถามครั้งแรกจนถึงการส่งมอบกุญแจ"
+
+  # Quick Actions
+  actions_title: "การดำเนินการด่วน"
+  action_search_title: "ค้นหาอสังหาริมทรัพย์"
+  action_search_desc: "ดูฐานข้อมูลที่ครอบคลุมของเรา"
+  action_valuation_title: "การประเมินมูลค่า"
+  action_valuation_desc: "รับการประเมินมูลค่าอสังหาริมทรัพย์ของคุณอย่างมืออาชีพ"
+  action_contact_title: "ติดต่อเรา"
+  action_contact_desc: "พูดคุยกับผู้เชี่ยวชาญของเรา"
+
+  # Property Listings
+  listings_title: "อสังหาริมทรัพย์ที่มีอยู่"
+  filter_location: "ทำเล"
+  filter_type: "ประเภท"
+  filter_price: "ราคา"
+  filter_bedrooms: "ห้องนอน"
+  filter_bathrooms: "ห้องน้ำ"
+  filter_apply: "ใช้ตัวกรอง"
+  filter_reset: "รีเซ็ตตัวกรอง"
+  no_results: "ไม่พบผลลัพธ์"
+  property_type_house: "บ้าน"
+  property_type_apartment: "อพาร์ทเมนต์"
+  property_type_condo: "คอนโด"
+  property_type_townhouse: "ทาวน์เฮาส์"
+  property_bedrooms: "ห้องนอน"
+  property_bathrooms: "ห้องน้ำ"
+  property_sqft: "ตร.ม."
+  property_view: "ดู"
+  property_contact: "ติดต่อ"
+  property_beds: "ห้องนอน"
+  property_baths: "ห้องน้ำ"
+  property_parking: "ที่จอดรถ"
+  property_built: "สร้างเมื่อ"
+  property_view_details: "ดูรายละเอียด"
+  property_badge_new: "ใหม่"
+  property_badge_featured: "แนะนำ"
+  property_badge_reduced: "ลดราคา"
+
+  # Filter Options
+  filter_any_price: "ราคาใดก็ได้"
+  filter_under_200k: "ต่ำกว่า 200,000 บาท"
+  filter_200k_400k: "200,000 - 400,000 บาท"
+  filter_400k_600k: "400,000 - 600,000 บาท"
+  filter_600k_plus: "600,000 บาท+"
+  filter_any: "ใดก็ได้"
+  filter_1_plus: "1+"
+  filter_2_plus: "2+"
+  filter_3_plus: "3+"
+  filter_4_plus: "4+"
+
+  # Property Titles
+  property_title_modern_family: "บ้านครอบครัวสมัยใหม่"
+  property_title_luxury_apartment: "อพาร์ทเมนต์หรู"
+  property_title_cozy_townhouse: "ทาวน์เฮาส์อบอุ่น"
+  property_title_downtown_condo: "คอนโดใจกลางเมือง"
+  property_title_spacious_family: "บ้านครอบครัวกว้างขวาง"
+  property_title_modern_loft: "ลอฟท์สมัยใหม่"
+  property_title_city_center_condo: "คอนโดใจกลางเมือง"
+  property_title_suburban_house: "บ้านชานเมือง"
+  property_title_studio_apartment: "สตูดิโออพาร์ทเมนต์"
+  property_title_family_townhouse: "ทาวน์เฮาส์ครอบครัว"
+  property_title_luxury_penthouse: "เพนต์เฮาส์หรู"
+  property_title_budget_apartment: "อพาร์ทเมนต์ราคาประหยัด"
+  property_title_large_detached: "บ้านเดี่ยวขนาดใหญ่"
+  property_title_modern_townhouse: "ทาวน์เฮาส์สมัยใหม่"
+  property_title_central_apartment: "อพาร์ทเมนต์ใจกลางเมือง"
+
+  # Property Descriptions
+  property_desc_modern_family: "บ้านครอบครัวสมัยใหม่ที่กว้างขวาง พร้อมพื้นที่ใช้สอยแบบเปิดโล่ง สวนหลังบ้านขนาดใหญ่ และใกล้โรงเรียนและสวนสาธารณะ"
+  property_desc_luxury_apartment: "อพาร์ทเมนต์หรูใจกลางเมือง มีวิวเมือง ครัวสมัยใหม่ และระเบียงส่วนตัว"
+  property_desc_cozy_townhouse: "ทาวน์เฮาส์ที่น่ารัก พร้อมห้องนอน 4 ห้อง ห้องน้ำ 3 ห้อง และเตาผิงที่อบอุ่น เหมาะสำหรับครอบครัว"
+  property_desc_downtown_condo: "คอนโดสมัยใหม่ใจกลางเมือง เหมาะสำหรับโสดหรือคู่รัก พร้อมสิ่งอำนวยความสะดวกครบครันและการเข้าถึงเมืองที่ดี"
+  property_desc_spacious_family: "บ้านครอบครัวขนาดใหญ่ พร้อมห้องนอน 5 ห้อง สวนขนาดใหญ่ และสระว่ายน้ำส่วนตัว เหมาะสำหรับการต้อนรับแขก"
+  property_desc_modern_loft: "ลอฟท์อพาร์ทเมนต์ที่สวยงามในย่านศิลปะ พร้อมการตกแต่งสมัยใหม่และสิ่งอำนวยความสะดวกที่ดี"
+  property_desc_city_center_condo: "คอนโดสมัยใหม่ใจกลางเมือง ใกล้สิ่งอำนวยความสะดวกทั้งหมด"
+  property_desc_suburban_house: "บ้านที่อบอุ่นในย่านที่เงียบสงบ เหมาะสำหรับครอบครัว"
+  property_desc_studio_apartment: "สตูดิโออพาร์ทเมนต์ขนาดกะทัดรัด เหมาะสำหรับโสดหรือนักศึกษา"
+  property_desc_family_townhouse: "ทาวน์เฮาส์ที่กว้างขวาง พร้อมสวนส่วนตัวและสิ่งอำนวยความสะดวกสมัยใหม่"
+  property_desc_luxury_penthouse: "เพนต์เฮาส์ที่สวยงามตระการตา พร้อมวิวพาโนรามาและคุณสมบัติหรูหรา"
+  property_desc_budget_apartment: "อพาร์ทเมนต์ราคาประหยัด เหมาะสำหรับผู้ซื้อครั้งแรกหรือนักลงทุน"
+  property_desc_large_detached: "บ้านเดี่ยวที่กว้างขวาง พร้อมสวนขนาดใหญ่และครัวสมัยใหม่"
+  property_desc_modern_townhouse: "ทาวน์เฮาส์สมัยใหม่ พร้อมสวนส่วนตัวและพื้นที่ใช้สอยแบบเปิดโล่ง"
+  property_desc_central_apartment: "อพาร์ทเมนต์ที่สว่างไสวใจกลางเมือง ใกล้การขนส่งและร้านค้า"
+
+  # Property Amenities
+  property_amenity_pool: "สระว่ายน้ำ"
+  property_amenity_internet: "อินเทอร์เน็ตความเร็วสูง"
+  property_amenity_garden: "สวน"
+  property_amenity_gym: "โรงยิม"
+  property_amenity_security: "รักษาความปลอดภัย 24/7"
+  property_amenity_elevator: "ลิฟต์"
+  property_amenity_fireplace: "เตาผิง"
+  property_amenity_private_yard: "สวนส่วนตัว"
+  property_amenity_pet_friendly: "อนุญาตสัตว์เลี้ยง"
+  property_amenity_large_garden: "สวนขนาดใหญ่"
+  property_amenity_security_basic: "รักษาความปลอดภัย"
+
+  # About Page
+  about_title: "เกี่ยวกับเรา"
+  about_subtitle: "พันธมิตรอสังหาริมทรัพย์ที่เชื่อถือได้ของคุณ"
+  about_content: "เราเป็นบริษัทอสังหาริมทรัพย์ชั้นนำที่มีประสบการณ์มากกว่า 15 ปีในตลาด ทีมผู้เชี่ยวชาญที่มีประสบการณ์ของเราเชี่ยวชาญในการช่วยคุณหาหรือขายอสังหาริมทรัพย์ที่สมบูรณ์แบบ เราให้บริการส่วนตัว ความรู้ตลาดที่ครอบคลุม และพอร์ตโฟลิโอที่กว้างขวางของอสังหาริมทรัพย์คุภาพสูง"
+
+  # Contact Page
+  contact_title: "ติดต่อ"
+  contact_subtitle: "มาพูดคุยกัน"
+  contact_content: "พร้อมที่จะเริ่มการเดินทางอสังหาริมทรัพย์ของคุณแล้วหรือยัง? ติดต่อเราวันนี้เพื่อรับการให้คำปรึกษาส่วนตัว ทีมของเราพร้อมช่วยตอบคำถามและช่วยเหลือคุณในเป้าหมายอสังหาริมทรัพย์ของคุณ"
+  contact_name: "ชื่อ"
+  contact_email: "อีเมล"
+  contact_phone: "โทรศัพท์"
+  contact_location: "ที่ตั้ง"
+
+  # Footer
+  footer_copyright: "© 2024 อสังหาริมทรัพย์ สงวนลิขสิทธิ์"
+
+  # Language Switcher
+  language_english: "English"
+  language_german: "Deutsch"
+  language_thai: "ไทย"
+
+  # Property Addresses
+  property_address_modern_family: "123 โอ๊คสตรีท, ดาวน์ทาวน์"
+  property_address_luxury_apartment: "456 พาร์คอเวนิว, มิดทาวน์"
+  property_address_cozy_townhouse: "789 เอล์มคอร์ท, ชานเมือง"
+  property_address_downtown_condo: "321 เมนสตรีท, ใจกลางเมือง"
+  property_address_spacious_family: "654 ไพน์โร้ด, เวสต์ไซด์"
+  property_address_modern_loft: "987 อินดัสเทรียลบูเลอวาร์ด, ย่านศิลปะ"
+  property_address_city_center_condo: "12 มาร์เก็ต, ดาวน์ทาวน์"
+  property_address_suburban_house: "88 เมเปิ้ลอเวนิว, ชานเมือง"
+  property_address_studio_apartment: "5 ริเวอร์โร้ด, มิดทาวน์"
+  property_address_family_townhouse: "77 โอ๊คเลน, เวสต์ไซด์"
+  property_address_luxury_penthouse: "1 สกายวิว, อัพทาวน์"
+  property_address_budget_apartment: "22 บัดเจ็ต, อีสต์ไซด์"
+  property_address_large_detached: "99 แกรนด์อเวนิว, นอร์ทไซด์"
+  property_address_modern_townhouse: "33 โมเดิร์น, มิดทาวน์"
+  property_address_central_apartment: "44 เซ็นทรัล, ดาวน์ทาวน์"
+
+  # Unique Amenities (examples, add as needed)
+  property_amenity_parking: "ที่จอดรถ"
+  property_amenity_built: "สร้างเมื่อ"
+
+  # UI Elements
+  listings_showing_count: "แสดง %{count} อสังหาริมทรัพย์"
+  pagination_previous: "ก่อนหน้า"
+  pagination_next: "ถัดไป"
+
+  # Services Pages
+  services_valuation_title: "การประเมินมูลค่าอสังหาริมทรัพย์"
+  services_valuation_subtitle: "การประเมินมูลค่าอสังหาริมทรัพย์อย่างมืออาชีพ"
+  services_valuation_content: "รับการประเมินมูลค่าอสังหาริมทรัพย์ที่แม่นยำจากผู้เชี่ยวชาญที่ได้รับการรับรองของเรา เราใช้การวิเคราะห์ตลาด การขายที่เทียบเคียงได้ และแนวโน้มตลาดปัจจุบันเพื่อให้การประเมินมูลค่าอสังหาริมทรัพย์ที่ครอบคลุม"
+
+  # Properties Pages
+  properties_search_title: "การค้นหาอสังหาริมทรัพย์"
+  properties_search_subtitle: "หาอสังหาริมทรัพย์ที่สมบูรณ์แบบของคุณ"
+  properties_search_content: "ใช้เครื่องมือค้นหาขั้นสูงของเราเพื่อหาอสังหาริมทรัพย์ที่ตรงกับเกณฑ์ของคุณ กรองตามทำเล ราคา ขนาด และอื่นๆ"
+
+  properties_developments_title: "โครงการใหม่"
+  properties_developments_subtitle: "โครงการอสังหาริมทรัพย์ล่าสุด"
+  properties_developments_content: "ค้นพบโครงการอสังหาริมทรัพย์ใหม่ล่าสุดในทำเลชั้นนำ รับการเข้าถึงก่อนใครสำหรับโอกาสก่อนการก่อสร้างและราคาพิเศษ"
+
+  # User Pages
+  users_login_title: "เข้าสู่ระบบ"
+  users_login_subtitle: "เข้าถึงบัญชีของคุณ"
+  users_login_content: "เข้าสู่ระบบบัญชีของคุณเพื่อจัดการการค้นหาอสังหาริมทรัพย์ บันทึกรายการโปรด และเข้าถึงเนื้อหาเฉพาะ"
+
+  users_profile_title: "โปรไฟล์"
+  users_profile_subtitle: "ข้อมูลบัญชีของคุณ"
+  users_profile_content: "จัดการข้อมูลส่วนตัว การตั้งค่า และอสังหาริมทรัพย์ที่บันทึกไว้"
+
+  # Page Titles
+  page_title_home: "หน้าแรก - อสังหาริมทรัพย์"
+  page_title_about: "เกี่ยวกับเรา - อสังหาริมทรัพย์"
+  page_title_contact: "ติดต่อ - อสังหาริมทรัพย์"
+  page_title_listings: "รายการอสังหาริมทรัพย์ - อสังหาริมทรัพย์"
+  page_title_search: "การค้นหาอสังหาริมทรัพย์ - อสังหาริมทรัพย์"
+  page_title_developments: "โครงการใหม่ - อสังหาริมทรัพย์"
+  page_title_valuation: "การประเมินมูลค่าอสังหาริมทรัพย์ - อสังหาริมทรัพย์"
+  page_title_login: "เข้าสู่ระบบ - อสังหาริมทรัพย์"
+  page_title_profile: "โปรไฟล์ - อสังหาริมทรัพย์"
+
+  # Form Fields
+  password: "รหัสผ่าน"

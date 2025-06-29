@@ -1,0 +1,204 @@
+de:
+  # Navigation
+  nav_home: "Startseite"
+  nav_properties: "Immobilien"
+  nav_services: "Dienstleistungen"
+  nav_about: "Über uns"
+  nav_contact: "Kontakt"
+  nav_login: "Anmelden"
+
+  # Hero Section
+  hero_title: "Finden Sie Ihr Traumhaus"
+  hero_subtitle: "Entdecken Sie exklusive Immobilien in den besten Lagen. Unsere Experten helfen Ihnen dabei, die perfekte Immobilie zu finden."
+  hero_cta_primary: "Immobilien durchsuchen"
+  hero_cta_secondary: "Mehr erfahren"
+
+  # Features Section
+  features_title: "Warum uns wählen"
+  feature_expertise_title: "Lokale Expertise & persönliche Erfahrung seit 2018"
+  feature_expertise_desc: "Mit über 6 Jahren Erfahrung im thailändischen Immobilienmarkt kenne ich nicht nur die besten Lagen, rechtlichen Feinheiten und Preisentwicklungen – ich weiß auch, worauf deutschsprachige Käufer wirklich Wert legen. Diese Kombination aus Marktkenntnis und kulturellem Verständnis sorgt für fundierte, sichere Entscheidungen."
+  feature_service_title: "Unabhängige Beratung auf Augenhöhe – auf Deutsch"
+  feature_service_desc: "Als gebürtiger Berliner spreche ich Ihre Sprache – im wörtlichen wie im übertragenen Sinn. Ich begleite Sie ehrlich, transparent und ohne Verkaufsdruck durch den gesamten Kaufprozess. Sie erhalten Klarheit über Rechte, Pflichten und Möglichkeiten, ohne Sprachbarrieren oder Missverständnisse."
+  feature_quality_title: "Zugang zu geprüften Immobilien & starken Partnern vor Ort"
+  feature_quality_desc: "Ich arbeite ausschließlich mit seriösen, lizenzierten Agenturen und Projektentwicklern zusammen. So erhalten Sie Zugang zu handverlesenen Immobilien – ob zur Eigennutzung oder als Investment – mit rechtssicherem Ablauf und persönlicher Betreuung von der ersten Anfrage bis zur Schlüsselübergabe."
+
+  # Quick Actions
+  actions_title: "Schnellzugriff"
+  action_search_title: "Immobilien suchen"
+  action_search_desc: "Durchsuchen Sie unsere umfangreiche Datenbank"
+  action_valuation_title: "Wertschätzung"
+  action_valuation_desc: "Lassen Sie Ihre Immobilie professionell bewerten"
+  action_contact_title: "Kontakt aufnehmen"
+  action_contact_desc: "Sprechen Sie mit unseren Experten"
+
+  # Property Listings
+  listings_title: "Verfügbare Immobilien"
+  filter_location: "Standort"
+  filter_type: "Typ"
+  filter_price: "Preis"
+  filter_bedrooms: "Schlafzimmer"
+  filter_bathrooms: "Badezimmer"
+  filter_apply: "Filter anwenden"
+  filter_reset: "Filter zurücksetzen"
+  no_results: "Keine Ergebnisse gefunden"
+  property_type_house: "Haus"
+  property_type_apartment: "Wohnung"
+  property_type_condo: "Eigentumswohnung"
+  property_type_townhouse: "Reihenhaus"
+  property_bedrooms: "Schlafzimmer"
+  property_bathrooms: "Badezimmer"
+  property_sqft: "m²"
+  property_view: "Ansehen"
+  property_contact: "Kontakt"
+  property_beds: "Schlafzimmer"
+  property_baths: "Badezimmer"
+  property_parking: "Parkplätze"
+  property_built: "Gebaut"
+  property_view_details: "Details ansehen"
+  property_badge_new: "Neu"
+  property_badge_featured: "Empfohlen"
+  property_badge_reduced: "Reduziert"
+
+  # Filter Options
+  filter_any_price: "Beliebiger Preis"
+  filter_under_200k: "Unter 200.000 €"
+  filter_200k_400k: "200.000 € - 400.000 €"
+  filter_400k_600k: "400.000 € - 600.000 €"
+  filter_600k_plus: "600.000 €+"
+  filter_any: "Beliebig"
+  filter_1_plus: "1+"
+  filter_2_plus: "2+"
+  filter_3_plus: "3+"
+  filter_4_plus: "4+"
+
+  # Property Titles
+  property_title_modern_family: "Modernes Familienhaus"
+  property_title_luxury_apartment: "Luxuswohnung"
+  property_title_cozy_townhouse: "Gemütliches Reihenhaus"
+  property_title_downtown_condo: "Innenstadt-Eigentumswohnung"
+  property_title_spacious_family: "Geräumiges Familienhaus"
+  property_title_modern_loft: "Modernes Loft"
+  property_title_city_center_condo: "Innenstadt-Eigentumswohnung"
+  property_title_suburban_house: "Vorstadthaus"
+  property_title_studio_apartment: "Studio-Wohnung"
+  property_title_family_townhouse: "Familien-Reihenhaus"
+  property_title_luxury_penthouse: "Luxus-Penthouse"
+  property_title_budget_apartment: "Günstige Wohnung"
+  property_title_large_detached: "Großes Einfamilienhaus"
+  property_title_modern_townhouse: "Modernes Reihenhaus"
+  property_title_central_apartment: "Zentrale Wohnung"
+
+  # Property Descriptions
+  property_desc_modern_family: "Ein geräumiges, modernes Familienhaus mit offenem Grundriss, großem Garten und in der Nähe von Schulen und Parks."
+  property_desc_luxury_apartment: "Eine Luxuswohnung im Herzen von Midtown mit Stadtblick, moderner Küche und privatem Balkon."
+  property_desc_cozy_townhouse: "Ein charmantes Reihenhaus mit vier Schlafzimmern, drei Badezimmern und einem gemütlichen Kamin. Perfekt für Familien."
+  property_desc_downtown_condo: "Eine moderne Innenstadt-Eigentumswohnung, ideal für Singles oder Paare, mit allen Annehmlichkeiten und guter Stadtanbindung."
+  property_desc_spacious_family: "Ein großes Familienhaus mit fünf Schlafzimmern, einem großen Garten und einem privaten Pool. Ideal zum Entertainen."
+  property_desc_modern_loft: "Eine stilvolle Loft-Wohnung im Kunstviertel mit modernen Ausstattungen und tollen Annehmlichkeiten."
+  property_desc_city_center_condo: "Moderne Eigentumswohnung im Herzen der Stadt, nahe allen Annehmlichkeiten."
+  property_desc_suburban_house: "Ein gemütliches Haus in einer ruhigen Nachbarschaft, perfekt für Familien."
+  property_desc_studio_apartment: "Kompakte Studio-Wohnung, ideal für Singles oder Studenten."
+  property_desc_family_townhouse: "Geräumiges Reihenhaus mit privatem Garten und modernen Annehmlichkeiten."
+  property_desc_luxury_penthouse: "Atemberaubendes Penthouse mit Panoramablick und Luxusausstattung."
+  property_desc_budget_apartment: "Erschwingliche Wohnung, ideal für Erstkäufer oder Investoren."
+  property_desc_large_detached: "Geräumiges Einfamilienhaus mit einem großen Garten und moderner Küche."
+  property_desc_modern_townhouse: "Modernes Reihenhaus mit privatem Garten und offenem Grundriss."
+  property_desc_central_apartment: "Helle Wohnung im Stadtzentrum, nahe Verkehrsmitteln und Geschäften."
+
+  # Property Amenities
+  property_amenity_pool: "Pool"
+  property_amenity_internet: "Hochgeschwindigkeits-Internet"
+  property_amenity_garden: "Garten"
+  property_amenity_gym: "Fitnessstudio"
+  property_amenity_security: "24/7 Sicherheit"
+  property_amenity_elevator: "Aufzug"
+  property_amenity_fireplace: "Kamin"
+  property_amenity_private_yard: "Privater Garten"
+  property_amenity_pet_friendly: "Haustiere erlaubt"
+  property_amenity_large_garden: "Großer Garten"
+  property_amenity_security_basic: "Sicherheit"
+
+  # About Page
+  about_title: "Über uns"
+  about_subtitle: "Ihr vertrauensvoller Partner für Immobilien"
+  about_content: "Wir sind ein führendes Immobilienunternehmen mit über 15 Jahren Erfahrung im Markt. Unser Team aus erfahrenen Experten ist darauf spezialisiert, Ihnen dabei zu helfen, die perfekte Immobilie zu finden oder zu verkaufen. Wir bieten persönlichen Service, umfassende Marktkenntnisse und ein umfangreiches Portfolio an hochwertigen Immobilien."
+
+  # Contact Page
+  contact_title: "Kontakt"
+  contact_subtitle: "Lassen Sie uns sprechen"
+  contact_content: "Bereit, Ihre Immobilienreise zu beginnen? Kontaktieren Sie uns noch heute für eine persönliche Beratung. Unser Team steht Ihnen gerne zur Verfügung, um Ihre Fragen zu beantworten und Ihnen bei Ihren Immobilienzielen zu helfen."
+  contact_name: "Name"
+  contact_email: "E-Mail"
+  contact_phone: "Telefon"
+  contact_location: "Standort"
+
+  # Footer
+  footer_copyright: "© 2024 Immobilien. Alle Rechte vorbehalten."
+
+  # Language Switcher
+  language_english: "English"
+  language_german: "Deutsch"
+  language_thai: "ไทย"
+
+  # Property Addresses
+  property_address_modern_family: "123 Eichenstraße, Innenstadt"
+  property_address_luxury_apartment: "456 Parkallee, Innenstadt"
+  property_address_cozy_townhouse: "789 Ulmenhof, Vorstadt"
+  property_address_downtown_condo: "321 Hauptstraße, Stadtzentrum"
+  property_address_spacious_family: "654 Kiefernweg, Weststadt"
+  property_address_modern_loft: "987 Industrie Blvd, Kunstviertel"
+  property_address_city_center_condo: "12 Marktstraße, Innenstadt"
+  property_address_suburban_house: "88 Ahornallee, Vorstadt"
+  property_address_studio_apartment: "5 Flussweg, Innenstadt"
+  property_address_family_townhouse: "77 Eichenweg, Weststadt"
+  property_address_luxury_penthouse: "1 Skyview Dr, Uptown"
+  property_address_budget_apartment: "22 Sparstraße, Oststadt"
+  property_address_large_detached: "99 Grand Allee, Nordstadt"
+  property_address_modern_townhouse: "33 Modernstraße, Innenstadt"
+  property_address_central_apartment: "44 Zentralallee, Innenstadt"
+
+  # Unique Amenities (examples, add as needed)
+  property_amenity_parking: "Parkplatz"
+  property_amenity_built: "Baujahr"
+
+  # UI Elements
+  listings_showing_count: "%{count} Immobilien werden angezeigt"
+  pagination_previous: "Zurück"
+  pagination_next: "Weiter"
+
+  # Services Pages
+  services_valuation_title: "Immobilienbewertung"
+  services_valuation_subtitle: "Professionelle Immobilienbewertung"
+  services_valuation_content: "Erhalten Sie eine genaue Bewertung Ihrer Immobilie von unseren zertifizierten Experten. Wir verwenden Marktanalyse, vergleichbare Verkäufe und aktuelle Markttrends, um Ihnen eine umfassende Immobilienbewertung zu bieten."
+
+  # Properties Pages
+  properties_search_title: "Immobiliensuche"
+  properties_search_subtitle: "Finden Sie Ihre perfekte Immobilie"
+  properties_search_content: "Nutzen Sie unsere erweiterten Suchwerkzeuge, um Immobilien zu finden, die Ihren Kriterien entsprechen. Filtern Sie nach Standort, Preis, Größe und mehr."
+
+  properties_developments_title: "Neue Entwicklungen"
+  properties_developments_subtitle: "Neueste Immobilienprojekte"
+  properties_developments_content: "Entdecken Sie die neuesten Immobilienentwicklungen in erstklassigen Lagen. Erhalten Sie frühzeitigen Zugang zu Vorverkaufsmöglichkeiten und Sonderpreisen."
+
+  # User Pages
+  users_login_title: "Anmelden"
+  users_login_subtitle: "Zugriff auf Ihr Konto"
+  users_login_content: "Melden Sie sich in Ihrem Konto an, um Ihre Immobiliensuchen zu verwalten, Favoriten zu speichern und exklusive Inhalte zu nutzen."
+
+  users_profile_title: "Profil"
+  users_profile_subtitle: "Ihre Kontoinformationen"
+  users_profile_content: "Verwalten Sie Ihre persönlichen Informationen, Präferenzen und gespeicherten Immobilien."
+
+  # Page Titles
+  page_title_home: "Startseite - Immobilien"
+  page_title_about: "Über uns - Immobilien"
+  page_title_contact: "Kontakt - Immobilien"
+  page_title_listings: "Immobilienangebote - Immobilien"
+  page_title_search: "Immobiliensuche - Immobilien"
+  page_title_developments: "Neue Entwicklungen - Immobilien"
+  page_title_valuation: "Immobilienbewertung - Immobilien"
+  page_title_login: "Anmelden - Immobilien"
+  page_title_profile: "Profil - Immobilien"
+
+  # Form Fields
+  password: "Passwort"

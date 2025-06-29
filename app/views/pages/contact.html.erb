@@ -1,2 +1,28 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<% content_for :title, t('page_title_contact') %>
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title"><%= t('contact_title') %></h1>
+    <p class="page-subtitle"><%= t('contact_subtitle') %></p>
+  </div>
+</div>
+
+<!-- Contact Content -->
+<div class="contact-content-section">
+  <div class="container">
+    <div class="contact-content">
+      <p><%= t('contact_content') %></p>
+      
+      <div class="contact-details">
+        <div class="contact-info">
+          <h3><%= t('contact_title') %></h3>
+          <p><strong><%= t('contact_name') %>:</strong> Tobias Schwitalla</p>
+          <p><strong><%= t('contact_email') %>:</strong> tobias.schwitalla@example.com</p>
+          <p><strong><%= t('contact_phone') %>:</strong> +66 81 234 5678</p>
+          <p><strong><%= t('contact_location') %>:</strong> Bangkok, Thailand</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

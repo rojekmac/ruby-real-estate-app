@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= I18n.locale %>">
  <head>
- <title>My First App</title>
+ <title><%= content_for?(:title) ? yield(:title) : t('page_title_home') %></title>
  <meta name="viewport" content="width=device-width,initial-scale=1">
  <%= csrf_meta_tags %>
  <%= csp_meta_tag %>
@@ -11,10 +11,21 @@
  </head>
 <body>
  <nav>
-  <%= link_to "HOME", root_path %>
-  <%= link_to "LISTINGS", pages_listings_path %>
-  <a href="<%= root_path %>#about-section">ABOUT US</a>
-  <a href="<%= root_path %>#contact-section">CONTACT</a>
+  <div class="nav-container">
+    <div class="nav-links">
+      <%= link_to t('nav_home'), root_path %>
+      <%= link_to t('nav_properties'), pages_listings_path %>
+      <a href="<%= root_path %>#about-section"><%= t('nav_about') %></a>
+      <a href="<%= root_path %>#contact-section"><%= t('nav_contact') %></a>
+    </div>
+    <div class="language-switcher">
+      <select id="language-select" onchange="changeLanguage(this.value)">
+        <option value="de" <%= 'selected' if I18n.locale == :de %>><%= t('language_german') %></option>
+        <option value="en" <%= 'selected' if I18n.locale == :en %>><%= t('language_english') %></option>
+        <option value="th" <%= 'selected' if I18n.locale == :th %>><%= t('language_thai') %></option>
+      </select>
+    </div>
+  </div>
  </nav>
  <%= yield %>
 
@@ -24,6 +35,10 @@
 </button>
 
 <script>
+  function changeLanguage(locale) {
+    window.location.href = '/language/switch/' + locale;
+  }
+
   document.addEventListener('turbo:load', function() {
     // Smooth scroll for anchor links
     if (window.location.hash) {
