@@ -81,7 +81,7 @@
     window.location.href = '/language/switch/' + locale;
   }
 
-  document.addEventListener('turbo:load', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     // Smooth scroll for anchor links
     if (window.location.hash) {
       const target = document.getElementById(window.location.hash.slice(1));

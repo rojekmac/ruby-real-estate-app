@@ -342,6 +342,7 @@ nav a:focus::after {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 1px solid var(--light-gray);
+  text-align: center;
 }
 
 .feature-card:hover {
@@ -401,6 +402,7 @@ nav a:focus::after {
   transition: all 0.3s ease;
   border: 1px solid var(--light-gray);
   display: block;
+  text-align: center;
 }
 
 .action-card:hover {
@@ -797,15 +799,15 @@ html {
   visibility: hidden;
 }
 
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 #back-to-top:hover {
   background: var(--primary-burgundy);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
-}
-
-#back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
 }
 
 .property-amenities {
@@ -1431,42 +1433,60 @@ html {
 @media (max-width: 900px) {
   .footer-columns {
     flex-direction: column;
-    align-items: stretch;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
   }
   .footer-col {
-    margin: 0 0 1.2rem 0;
-    font-size: 1.1rem;
+    flex: none !important;
+    margin: 0 0 0.1rem 0;
+    font-size: 1rem;
     text-align: center;
+    background: none;
+    border-radius: 0;
+    padding: 0;
   }
   .footer-section-title {
     text-align: center;
+    margin-bottom: 0.1rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #ff4a4a;
   }
   .footer-col ul {
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto 0.05rem auto;
     display: inline-block;
-    text-align: left;
+    text-align: center;
+  }
+  .footer-col li {
+    margin-bottom: 0.05rem;
   }
   .footer-bottom {
     flex-direction: column;
     align-items: center;
-    gap: 0.7rem;
-    font-size: 1rem;
+    gap: 0.1rem;
+    font-size: 0.93rem;
     text-align: center;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 0.05rem;
   }
   .footer-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.2rem;
-    margin-top: 0.5rem;
+    gap: 0.3rem;
+    margin-top: 0.05rem;
   }
   .footer-links a {
     margin-left: 0;
-    font-size: 1rem;
+    font-size: 0.93rem;
+  }
+  .site-footer {
+    padding: 1.5rem 0 0.7rem 0;
   }
 }
 
@@ -1477,4 +1497,69 @@ html {
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+}
+
+.feature-icon,
+.action-icon {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.property-details i {
+  display: inline-block;
+  margin: 0 0.2rem 0 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .features-grid,
+  .actions-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .feature-card,
+  .action-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .feature-icon,
+  .action-icon {
+    font-size: 2.4rem;
+    margin-bottom: 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .property-details {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .property-details i {
+    font-size: 1.2rem;
+    margin: 0 0.2rem 0 0;
+    text-align: center;
+  }
 }
