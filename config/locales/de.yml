@@ -207,3 +207,6 @@ de:
     pagination:
       next: "Weiter"
       previous: "Zurück"
+      first: "Erste"
+      last: "Letzte"
+      truncate: "…"

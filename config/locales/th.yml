@@ -202,3 +202,11 @@ th:
 
   # Form Fields
   password: "รหัสผ่าน"
+
+  views:
+    pagination:
+      next: "ถัดไป"
+      previous: "ก่อนหน้า"
+      first: "หน้าแรก"
+      last: "หน้าสุดท้าย"
+      truncate: "…"

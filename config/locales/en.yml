@@ -231,3 +231,7 @@ en:
 
   # Form Fields
   password: "Password"
+
+  views:
+    pagination:
+      truncate: "…"
