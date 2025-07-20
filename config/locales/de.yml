@@ -8,26 +8,28 @@ de:
   nav_login: "Anmelden"
 
   # Hero Section
-  hero_title: "Finden Sie Ihr Traumhaus"
-  hero_subtitle: "Entdecken Sie exklusive Immobilien in den besten Lagen. Unsere Experten helfen Ihnen dabei, die perfekte Immobilie zu finden."
-  hero_cta_primary: "Immobilien durchsuchen"
+  hero_title: "Finden Sie Ihre Traumimmobilie in Thailand - sicher & einfach auf Deutsch"
+  hero_subtitle: "Deutschsprachiger Service, geprüfte Projekte und persönliche Beratung in Bangkok für Ihren sicheren Immobilienkauf."
+  hero_cta_primary: "Jetzt Immobilie finden"
   hero_cta_secondary: "Mehr erfahren"
 
   # Features Section
-  features_title: "Warum uns wählen"
-  feature_expertise_title: "Lokale Expertise & persönliche Erfahrung seit 2018"
-  feature_expertise_desc: "Mit über 6 Jahren Erfahrung im thailändischen Immobilienmarkt kenne ich nicht nur die besten Lagen, rechtlichen Feinheiten und Preisentwicklungen – ich weiß auch, worauf deutschsprachige Käufer wirklich Wert legen. Diese Kombination aus Marktkenntnis und kulturellem Verständnis sorgt für fundierte, sichere Entscheidungen."
-  feature_service_title: "Unabhängige Beratung auf Augenhöhe – auf Deutsch"
-  feature_service_desc: "Als gebürtiger Berliner spreche ich Ihre Sprache – im wörtlichen wie im übertragenen Sinn. Ich begleite Sie ehrlich, transparent und ohne Verkaufsdruck durch den gesamten Kaufprozess. Sie erhalten Klarheit über Rechte, Pflichten und Möglichkeiten, ohne Sprachbarrieren oder Missverständnisse."
-  feature_quality_title: "Zugang zu geprüften Immobilien & starken Partnern vor Ort"
-  feature_quality_desc: "Ich arbeite ausschließlich mit seriösen, lizenzierten Agenturen und Projektentwicklern zusammen. So erhalten Sie Zugang zu handverlesenen Immobilien – ob zur Eigennutzung oder als Investment – mit rechtssicherem Ablauf und persönlicher Betreuung von der ersten Anfrage bis zur Schlüsselübergabe."
+  features_title: "Ihre Vorteile"
+  feature_expertise_title: "Deutschsprachiger Service"
+  feature_expertise_desc: "Komplette Betreuung auf Deutsch - von der ersten Beratung bis zur Schlüsselübergabe. Keine Sprachbarrieren, keine Missverständnisse."
+  feature_service_title: "Geprüfte Projekte"
+  feature_service_desc: "Alle Immobilien werden sorgfältig geprüft und kontrolliert. Nur seriöse Entwickler und rechtssichere Projekte in unserem Portfolio."
+  feature_quality_title: "Persönliche Beratung in Bangkok"
+  feature_quality_desc: "Ihr persönlicher Ansprechpartner Tobias Schwitalla berät Sie direkt vor Ort in Bangkok. Persönlich, kompetent und vertrauensvoll."
 
-  # Quick Actions
-  actions_title: "Schnellzugriff"
-  action_search_title: "Immobilien suchen"
-  action_search_desc: "Durchsuchen Sie unsere umfangreiche Datenbank"
-  action_valuation_title: "Wertschätzung"
-  action_valuation_desc: "Lassen Sie Ihre Immobilie professionell bewerten"
+  # Highlight Objects
+  actions_title: "Highlight-Objekte"
+  action_search_title: "Top-Angebote"
+  action_search_desc: "Unsere besten und beliebtesten Immobilienangebote"
+  action_contact_title: "Off-Plan Projekte"
+  action_contact_desc: "Neue Projekte vor Fertigstellung - beste Preise sichern"
+  action_valuation_title: "Schnäppchen"
+  action_valuation_desc: "Reduzierte Preise und besondere Gelegenheiten"
   action_contact_title: "Kontakt aufnehmen"
   action_contact_desc: "Sprechen Sie mit unseren Experten"
 
@@ -104,6 +106,16 @@ de:
   property_desc_large_detached: "Geräumiges Einfamilienhaus mit einem großen Garten und moderner Küche."
   property_desc_modern_townhouse: "Modernes Reihenhaus mit privatem Garten und offenem Grundriss."
   property_desc_central_apartment: "Helle Wohnung im Stadtzentrum, nahe Verkehrsmitteln und Geschäften."
+
+  # Customer Reviews Section
+  reviews_title: "Kundenbewertungen"
+  reviews_subtitle: "Was unsere Kunden sagen"
+  review_1_text: "Tobias hat uns perfekt beraten und den gesamten Kaufprozess professionell begleitet. Wir fühlen uns sehr gut aufgehoben."
+  review_1_author: "Familie Müller, Bangkok"
+  review_2_text: "Deutschsprachige Betreuung war für uns sehr wichtig. Alles lief reibungslos und transparent ab."
+  review_2_author: "Stefan K., Phuket"
+  review_3_text: "Geprüfte Projekte und ehrliche Beratung - genau das haben wir gesucht. Sehr empfehlenswert!"
+  review_3_author: "Andrea S., Pattaya"
 
   # Property Amenities
   property_amenity_pool: "Pool"

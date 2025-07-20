@@ -752,7 +752,7 @@ nav a:focus::after {
 
 /* About and Contact Sections */
 .about-section {
-  background: var(--warm-beige);
+  background: var(--soft-beige);
   padding: 4rem 0;
   width: 100%;
 }
@@ -1643,4 +1643,92 @@ html {
 .action-icon:hover,
 .property-details i:hover {
   transform: scale(1.15) rotate(-6deg);
+}
+
+/* Customer Reviews Section */
+.reviews-section {
+  padding: 5rem 0;
+  background: var(--warm-beige);
+}
+
+.reviews-section .section-subtitle {
+  text-align: center;
+  color: var(--medium-gray);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.review-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--light-gray);
+  position: relative;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.review-card::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 4rem;
+  color: var(--primary-red);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  padding-top: 1rem;
+}
+
+.review-author {
+  font-weight: 600;
+  color: var(--primary-burgundy);
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+/* Mobile responsiveness for reviews */
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .review-card {
+    padding: 1.5rem;
+  }
+  
+  .review-card::before {
+    font-size: 3rem;
+    top: -5px;
+  }
+  
+  .review-text {
+    font-size: 0.95rem;
+  }
 }
