@@ -44,13 +44,4 @@ A modern, mobile-friendly web application for showcasing real estate listings in
    ```
 5. **Visit:** [http://localhost:3000](http://localhost:3000)
 
-## Contact
-
-**Name:** Tobias Schwitall  
-**Email:** tobias.schwitall@example.com  
-**Phone:** +66 81 234 5678  
-**Location:** Bangkok, Thailand
-
----
-
 _This project is a work in progress. Contributions and feedback are welcome!_
