@@ -33,3 +33,8 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+
+# Deployment environment (used by Render)
+deployment:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
