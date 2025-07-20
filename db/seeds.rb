@@ -5,6 +5,14 @@
 # Clear existing data to prevent duplicates
 Property.destroy_all
 
+# Available sample images for properties
+sample_images = [
+  [ 'propertyPhoto.jpg', 'thai_logo.jpeg' ],
+  [ 'thai_logo.jpeg', 'propertyPhoto.jpg' ],
+  [ 'propertyPhoto.jpg' ],
+  [ 'thai_logo.jpeg' ]
+]
+
 # Thailand property listings
 thailand_properties = [
   {
@@ -13,7 +21,8 @@ thailand_properties = [
     bedrooms: 3,
     bathrooms: 2,
     address: '123 Sukhumvit Road, Bangkok',
-    description: 'Modern family home with pool and tropical garden in central Bangkok.'
+    description: 'Modern family home with pool and tropical garden in central Bangkok.',
+    images: sample_images.sample
   },
   {
     property_type: 'apartment',
@@ -21,7 +30,8 @@ thailand_properties = [
     bedrooms: 2,
     bathrooms: 2,
     address: '456 Silom Road, Bangkok',
-    description: 'Luxury apartment in Bangkok CBD with BTS access.'
+    description: 'Luxury apartment in Bangkok CBD with BTS access.',
+    images: sample_images.sample
   },
   {
     property_type: 'house',
@@ -29,7 +39,8 @@ thailand_properties = [
     bedrooms: 4,
     bathrooms: 3,
     address: '789 Chalong Bay, Phuket',
-    description: 'Beachfront villa with private pool and stunning ocean views.'
+    description: 'Beachfront villa with private pool and stunning ocean views.',
+    images: sample_images.sample
   },
   {
     property_type: 'condo',
@@ -37,7 +48,8 @@ thailand_properties = [
     bedrooms: 1,
     bathrooms: 1,
     address: '101 Thapae Road, Chiang Mai',
-    description: 'Modern condo in old city Chiang Mai with mountain views.'
+    description: 'Modern condo in old city Chiang Mai with mountain views.',
+    images: sample_images.sample
   },
   {
     property_type: 'house',
@@ -45,7 +57,8 @@ thailand_properties = [
     bedrooms: 5,
     bathrooms: 4,
     address: '202 Nimmanhaemin Road, Chiang Mai',
-    description: 'Spacious family house with large garden in trendy Nimman area.'
+    description: 'Spacious family house with large garden in trendy Nimman area.',
+    images: sample_images.sample
   },
   {
     property_type: 'apartment',
@@ -53,7 +66,8 @@ thailand_properties = [
     bedrooms: 2,
     bathrooms: 2,
     address: '303 Beach Road, Pattaya',
-    description: 'Beachfront apartment with gym and swimming pool facilities.'
+    description: 'Beachfront apartment with gym and swimming pool facilities.',
+    images: sample_images.sample
   },
   {
     property_type: 'condo',
@@ -61,7 +75,8 @@ thailand_properties = [
     bedrooms: 2,
     bathrooms: 1,
     address: '404 Walking Street, Pattaya',
-    description: 'City center condo with 24/7 security and entertainment nearby.'
+    description: 'City center condo with 24/7 security and entertainment nearby.',
+    images: sample_images.sample
   },
   {
     property_type: 'house',
@@ -69,7 +84,8 @@ thailand_properties = [
     bedrooms: 3,
     bathrooms: 2,
     address: '505 Kata Beach, Phuket',
-    description: 'Traditional Thai house near beautiful Kata Beach.'
+    description: 'Traditional Thai house near beautiful Kata Beach.',
+    images: sample_images.sample
   },
   {
     property_type: 'apartment',
@@ -77,7 +93,8 @@ thailand_properties = [
     bedrooms: 1,
     bathrooms: 1,
     address: '606 Asok Road, Bangkok',
-    description: 'Studio apartment with modern amenities in business district.'
+    description: 'Studio apartment with modern amenities in business district.',
+    images: sample_images.sample
   },
   {
     property_type: 'townhouse',
@@ -85,7 +102,8 @@ thailand_properties = [
     bedrooms: 3,
     bathrooms: 2,
     address: '707 Huai Khwang, Bangkok',
-    description: 'Family townhouse with private parking in quiet neighborhood.'
+    description: 'Family townhouse with private parking in quiet neighborhood.',
+    images: sample_images.sample
   },
   {
     property_type: 'condo',
@@ -93,7 +111,8 @@ thailand_properties = [
     bedrooms: 4,
     bathrooms: 3,
     address: '808 Sathorn Road, Bangkok',
-    description: 'Luxury penthouse with river views, gym and infinity pool.'
+    description: 'Luxury penthouse with river views, gym and infinity pool.',
+    images: sample_images.sample
   },
   {
     property_type: 'apartment',
@@ -101,7 +120,8 @@ thailand_properties = [
     bedrooms: 1,
     bathrooms: 1,
     address: '909 Ratchadaphisek Road, Bangkok',
-    description: 'Affordable apartment with MRT access and basic amenities.'
+    description: 'Affordable apartment with MRT access and basic amenities.',
+    images: sample_images.sample
   }
 ]
 
@@ -121,7 +141,8 @@ additional_properties = (1..20).map do |i|
     bedrooms: rand(1..5),
     bathrooms: rand(1..4),
     address: "#{100 + i} #{road} Road, #{city}",
-    description: "Beautiful Thai property ##{i} in #{city} with modern amenities and great location."
+    description: "Beautiful Thai property ##{i} in #{city} with modern amenities and great location.",
+    images: sample_images.sample
   }
 end
 

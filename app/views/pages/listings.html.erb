@@ -70,7 +70,7 @@
         <% @properties.each do |property| %>
           <div class="property-card">
             <div class="property-image">
-              <%= image_tag 'propertyPhoto.jpg', alt: 'Property Photo', class: 'property-img' %>
+              <%= image_tag property.primary_image, alt: 'Property Photo', class: 'property-img' %>
             </div>
             <div class="property-content">
               <h3 class="property-title"><%= property.property_type.titleize %></h3>

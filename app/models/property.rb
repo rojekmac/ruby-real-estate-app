@@ -5,6 +5,23 @@ class Property < ApplicationRecord
   validates :bathrooms, presence: true, numericality: { greater_than: 0 }
   validates :property_type, inclusion: { in: %w[house apartment condo townhouse] }
   validates :description, presence: true
+
+  # Serialize images as JSON array
+  serialize :images, JSON
+
+  # Helper method to get the primary image for listings
+  def primary_image
+    return 'propertyPhoto.jpg' if images.blank? || images.empty?
+    
+    images.first
+  end
+
+  # Helper method to get all images or fallback to default
+  def all_images
+    return [ 'propertyPhoto.jpg' ] if images.blank? || images.empty?
+    
+    images
+  end
   scope :by_type, ->(type) {
     type.present? && %w[house apartment condo townhouse].include?(type) ? where(property_type: type) : all
   }
