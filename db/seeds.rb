@@ -108,15 +108,15 @@ thailand_properties = [
 Property.create!(thailand_properties)
 
 # Additional sample properties for pagination testing
-thailand_cities = ['Bangkok', 'Phuket', 'Chiang Mai', 'Pattaya', 'Hua Hin', 'Koh Samui', 'Krabi', 'Chiang Rai']
-thai_roads = ['Sukhumvit', 'Silom', 'Sathorn', 'Phetchaburi', 'Ratchadamri', 'Wireless', 'Ploenchit', 'Asok']
+thailand_cities = [ 'Bangkok', 'Phuket', 'Chiang Mai', 'Pattaya', 'Hua Hin', 'Koh Samui', 'Krabi', 'Chiang Rai' ]
+thai_roads = [ 'Sukhumvit', 'Silom', 'Sathorn', 'Phetchaburi', 'Ratchadamri', 'Wireless', 'Ploenchit', 'Asok' ]
 
 additional_properties = (1..20).map do |i|
   city = thailand_cities.sample
   road = thai_roads.sample
-  
+
   {
-    property_type: %w[house apartment condo townhouse].sample,
+    property_type: %w[ house apartment condo townhouse ].sample,
     price: rand(1_500_000..15_000_000),
     bedrooms: rand(1..5),
     bathrooms: rand(1..4),
