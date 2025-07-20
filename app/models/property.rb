@@ -1,5 +1,4 @@
 class Property < ApplicationRecord
-  validates :title, presence: true, length: { minimum: 5 }
   validates :address, presence: true
   validates :price, presence: true, numericality: { greater_than: 0 }
   validates :bedrooms, presence: true, numericality: { greater_than: 0 }
