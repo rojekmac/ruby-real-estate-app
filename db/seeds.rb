@@ -4,6 +4,17 @@
 
 # Clear existing data to prevent duplicates
 Property.destroy_all
+User.destroy_all
+
+# Create admin user
+admin_user = User.create!(
+  email: 'admin@example.com',
+  password: 'password123',
+  password_confirmation: 'password123',
+  admin: true
+)
+
+puts "Created admin user: #{admin_user.email}"
 
 # Thailand property listings
 thailand_properties = [

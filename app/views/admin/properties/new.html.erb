@@ -1,0 +1,69 @@
+<% content_for :page_title, "Add New Property" %>
+<% @page_title = "Add New Property" %>
+
+<div class="admin-section">
+  <div class="admin-section-header">
+    <h2>Add New Property</h2>
+    <%= link_to "Back to Properties", admin_properties_path, class: "admin-btn admin-btn-outline" %>
+  </div>
+
+  <div class="admin-form-wrapper">
+    <%= form_with(model: [:admin, @property], local: true, class: "admin-form") do |form| %>
+      <% if @property.errors.any? %>
+        <div class="admin-alert admin-alert-danger">
+          <h4><%= pluralize(@property.errors.count, "error") %> prohibited this property from being saved:</h4>
+          <ul>
+            <% @property.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="admin-form-group">
+        <%= form.label :property_type, class: "admin-form-label" %>
+        <%= form.select :property_type, 
+            options_for_select([
+              ['House', 'house'],
+              ['Apartment', 'apartment'], 
+              ['Condo', 'condo'],
+              ['Townhouse', 'townhouse']
+            ], @property.property_type), 
+            { prompt: 'Select property type' }, 
+            { class: "admin-form-select" } %>
+      </div>
+
+      <div class="admin-form-group">
+        <%= form.label :address, class: "admin-form-label" %>
+        <%= form.text_field :address, class: "admin-form-input" %>
+      </div>
+
+      <div class="admin-form-row">
+        <div class="admin-form-group">
+          <%= form.label :price, class: "admin-form-label" %>
+          <%= form.number_field :price, class: "admin-form-input", step: 1 %>
+        </div>
+
+        <div class="admin-form-group">
+          <%= form.label :bedrooms, class: "admin-form-label" %>
+          <%= form.number_field :bedrooms, class: "admin-form-input", min: 1 %>
+        </div>
+
+        <div class="admin-form-group">
+          <%= form.label :bathrooms, class: "admin-form-label" %>
+          <%= form.number_field :bathrooms, class: "admin-form-input", min: 1 %>
+        </div>
+      </div>
+
+      <div class="admin-form-group">
+        <%= form.label :description, class: "admin-form-label" %>
+        <%= form.text_area :description, class: "admin-form-textarea", rows: 5 %>
+      </div>
+
+      <div class="admin-form-actions">
+        <%= form.submit "Create Property", class: "admin-btn admin-btn-primary" %>
+        <%= link_to "Cancel", admin_properties_path, class: "admin-btn admin-btn-outline" %>
+      </div>
+    <% end %>
+  </div>
+</div>
