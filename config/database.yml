@@ -32,8 +32,4 @@ test:
 # Use environment variables for security
 production:
   <<: *default
-  database: thailand_properties_production
-  username: <%= ENV['DATABASE_USER'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  host: <%= ENV['DATABASE_HOST'] %>
-  port: <%= ENV['DATABASE_PORT'] || 5432 %>
+  url: <%= ENV['DATABASE_URL'] %>
