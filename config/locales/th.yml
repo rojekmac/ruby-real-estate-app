@@ -61,10 +61,10 @@ th:
 
   # Filter Options
   filter_any_price: "ราคาใดก็ได้"
-  filter_under_200k: "ต่ำกว่า 200,000 บาท"
-  filter_200k_400k: "200,000 - 400,000 บาท"
-  filter_400k_600k: "400,000 - 600,000 บาท"
-  filter_600k_plus: "600,000 บาท+"
+  filter_under_3m: "ต่ำกว่า 3 ล้านบาท"
+  filter_3m_6m: "3 - 6 ล้านบาท"
+  filter_6m_10m: "6 - 10 ล้านบาท"
+  filter_10m_plus: "10 ล้านบาท+"
   filter_any: "ใดก็ได้"
   filter_1_plus: "1+"
   filter_2_plus: "2+"

@@ -25,18 +25,18 @@ document.addEventListener("turbo:load", function () {
         if (type && card.dataset.type !== type) show = false;
         if (price) {
           const cardPrice = parseInt(card.dataset.price, 10);
-          if (price === "0-200000" && !(cardPrice < 200000)) show = false;
+          if (price === "0-3000000" && !(cardPrice < 3000000)) show = false;
           if (
-            price === "200000-400000" &&
-            !(cardPrice >= 200000 && cardPrice <= 400000)
+            price === "3000000-6000000" &&
+            !(cardPrice >= 3000000 && cardPrice <= 6000000)
           )
             show = false;
           if (
-            price === "400000-600000" &&
-            !(cardPrice > 400000 && cardPrice <= 600000)
+            price === "6000000-10000000" &&
+            !(cardPrice >= 6000000 && cardPrice <= 10000000)
           )
             show = false;
-          if (price === "600000+" && !(cardPrice > 600000)) show = false;
+          if (price === "10000000+" && !(cardPrice >= 10000000)) show = false;
         }
         if (
           bedrooms &&

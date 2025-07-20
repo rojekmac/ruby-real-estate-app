@@ -90,10 +90,10 @@ en:
 
   # Filter Options
   filter_any_price: "Any Price"
-  filter_under_200k: "Under $200,000"
-  filter_200k_400k: "$200,000 - $400,000"
-  filter_400k_600k: "$400,000 - $600,000"
-  filter_600k_plus: "$600,000+"
+  filter_under_3m: "Under ฿3M"
+  filter_3m_6m: "฿3M - ฿6M"
+  filter_6m_10m: "฿6M - ฿10M"
+  filter_10m_plus: "฿10M+"
   filter_any: "Any"
   filter_1_plus: "1+"
   filter_2_plus: "2+"

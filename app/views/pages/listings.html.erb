@@ -26,10 +26,10 @@
         <label for="price-range"><%= t('filter_price') %></label>
         <select id="price-range" name="price" class="filter-select">
           <option value=""><%= t('filter_any_price') %></option>
-          <option value="0-200000" <%= 'selected' if params[:price] == '0-200000' %>><%= t('filter_under_200k') %></option>
-          <option value="200000-400000" <%= 'selected' if params[:price] == '200000-400000' %>><%= t('filter_200k_400k') %></option>
-          <option value="400000-600000" <%= 'selected' if params[:price] == '400000-600000' %>><%= t('filter_400k_600k') %></option>
-          <option value="600000+" <%= 'selected' if params[:price] == '600000+' %>><%= t('filter_600k_plus') %></option>
+          <option value="0-3000000" <%= 'selected' if params[:price] == '0-3000000' %>><%= t('filter_under_3m') %></option>
+          <option value="3000000-6000000" <%= 'selected' if params[:price] == '3000000-6000000' %>><%= t('filter_3m_6m') %></option>
+          <option value="6000000-10000000" <%= 'selected' if params[:price] == '6000000-10000000' %>><%= t('filter_6m_10m') %></option>
+          <option value="10000000+" <%= 'selected' if params[:price] == '10000000+' %>><%= t('filter_10m_plus') %></option>
         </select>
       </div>
       <div class="filter-group">
