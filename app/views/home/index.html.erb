@@ -52,26 +52,10 @@
     <div class="actions-grid">
       <%= link_to pages_listings_path, class: "action-card" do %>
         <div class="action-icon">
-          <i class="fas fa-list"></i>
-        </div>
-        <h3><%= t('action_search_title') %></h3>
-        <p><%= t('action_search_desc') %></p>
-      <% end %>
-      
-      <%= link_to properties_search_path, class: "action-card" do %>
-        <div class="action-icon">
           <i class="fas fa-search"></i>
         </div>
         <h3><%= t('action_search_title') %></h3>
         <p><%= t('action_search_desc') %></p>
-      <% end %>
-      
-      <%= link_to properties_developments_path, class: "action-card" do %>
-        <div class="action-icon">
-          <i class="fas fa-building"></i>
-        </div>
-        <h3><%= t('action_valuation_title') %></h3>
-        <p><%= t('action_valuation_desc') %></p>
       <% end %>
       
       <%= link_to services_valuation_path, class: "action-card" do %>

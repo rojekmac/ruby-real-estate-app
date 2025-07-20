@@ -1,4 +1,10 @@
 class Property < ApplicationRecord
+  validates :address, presence: true
+  validates :price, presence: true, numericality: { greater_than: 0 }
+  validates :bedrooms, presence: true, numericality: { greater_than: 0 }
+  validates :bathrooms, presence: true, numericality: { greater_than: 0 }
+  validates :property_type, inclusion: { in: %w[house apartment condo townhouse] }
+  validates :description, presence: true
   scope :by_type, ->(type) {
     type.present? && %w[house apartment condo townhouse].include?(type) ? where(property_type: type) : all
   }

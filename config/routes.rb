@@ -12,9 +12,6 @@ Rails.application.routes.draw do
   get "pages/contact"
   get "pages/listings"
 
-  # Properties
-  get "properties/search"
-  get "properties/developments"
 
   # Users
   get "users/profile"
