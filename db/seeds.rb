@@ -7,14 +7,19 @@ Property.destroy_all
 User.destroy_all
 
 # Create admin user
+admin_email = ENV['ADMIN_EMAIL'] || 'admin@thailandeigentum.de'
+admin_password = ENV['ADMIN_PASSWORD'] || SecureRandom.hex(12)
+
 admin_user = User.create!(
-  email: 'admin@example.com',
-  password: 'password123',
-  password_confirmation: 'password123',
+  email: admin_email,
+  password: admin_password,
+  password_confirmation: admin_password,
   admin: true
 )
 
 puts "Created admin user: #{admin_user.email}"
+puts "Admin password: #{admin_password}" unless ENV['ADMIN_PASSWORD']
+puts "IMPORTANT: Save these credentials securely!"
 
 # Thailand property listings
 thailand_properties = [

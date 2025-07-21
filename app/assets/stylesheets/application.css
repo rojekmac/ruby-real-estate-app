@@ -2039,6 +2039,12 @@ html {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.admin-action-buttons form {
+  display: inline-block;
+  margin: 0;
 }
 
 /* Admin Quick Actions */
