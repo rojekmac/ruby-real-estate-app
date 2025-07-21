@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "home#index"
 
   # Language switching
@@ -12,6 +13,12 @@ Rails.application.routes.draw do
   get "pages/contact"
   get "pages/listings"
 
+  # Admin Panel
+  namespace :admin do
+    root "dashboard#index"
+    resources :properties
+    get "dashboard", to: "dashboard#index"
+  end
 
   # Users
   get "users/profile"
